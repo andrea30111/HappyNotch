@@ -16,6 +16,7 @@ final class Services {
     let permissions: PermissionsCenter
     let clipboard: ClipboardHistory
     let notesSync: AppleNotesSync
+    let calls: CallRecorder
     private var cancellables = Set<AnyCancellable>()
 
     init(store: Store? = nil) {
@@ -40,6 +41,8 @@ final class Services {
             .filter { $0 }
             .sink { _ in notesSync.refreshIfStale() }
             .store(in: &cancellables)
+        let calls = CallRecorder()
+        self.calls = calls
         permissions = PermissionsCenter(calendar: calendar, reminders: reminders)
         clipboard = ClipboardHistory(store: store)
         scheduler = ReminderScheduler(store: store, state: state)
@@ -59,6 +62,18 @@ final class Services {
         speech.onAuthorizationPrompt = { [weak state] waiting in
             state?.isPinned = waiting
         }
+        calls.onBegan = { [weak state] in
+            state?.post(Nudge(
+                symbol: "phone.fill",
+                title: "Recording Teams",
+                subtitle: "Tell the other people — Teams won't notify them.",
+                tint: DS.Palette.call,
+                duration: 5
+            ))
+        }
+        calls.onSaved = { [weak state] in
+            state?.post(Nudge(symbol: "phone.fill", title: "Call saved", subtitle: "Saved on this Mac", tint: DS.Palette.call, sound: "Pop", duration: 3))
+        }
     }
 }
 
@@ -76,5 +91,6 @@ extension View {
             .environmentObject(services.permissions)
             .environmentObject(services.clipboard)
             .environmentObject(services.notesSync)
+            .environmentObject(services.calls)
     }
 }

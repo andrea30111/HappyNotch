@@ -5,15 +5,17 @@ import SwiftUI
 struct NotchRootView: View {
     @EnvironmentObject private var state: AppState
     @EnvironmentObject private var timer: FocusTimer
+    @EnvironmentObject private var calls: CallRecorder
     @EnvironmentObject private var store: Store
 
-    private enum Mode: Equatable { case hidden, idle, timer, nudge, open }
+    private enum Mode: Equatable { case hidden, idle, timer, recording, nudge, open }
 
     private var layout: NotchLayout { state.layout }
 
     private var mode: Mode {
         if state.isOpen { return .open }
         if state.nudge != nil { return .nudge }
+        if calls.isRecording && layout.hasNotch { return .recording }
         if timer.isActive && layout.hasNotch { return .timer }
         return layout.hasNotch ? .idle : .hidden
     }
@@ -26,7 +28,7 @@ struct NotchRootView: View {
             return layout.openPanelSize(for: state.tool)
         case .nudge:
             return CGSize(width: max(notch.width + 220, 400), height: (layout.hasNotch ? notch.height : 0) + 56)
-        case .timer:
+        case .timer, .recording:
             return CGSize(width: notch.width + 150 + flare, height: notch.height)
         case .idle:
             return CGSize(width: notch.width + NotchLayout.mascotWing * 2 + flare, height: notch.height)
@@ -70,6 +72,9 @@ struct NotchRootView: View {
                 }
             case .timer:
                 NotchTimerIndicator()
+                    .transition(.opacity)
+            case .recording:
+                CallRecordingIndicator()
                     .transition(.opacity)
             case .idle:
                 HStack(spacing: 0) {
@@ -271,6 +276,32 @@ private struct TimerIndicatorContent: View {
         .frame(height: height)
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(paused ? "Focus timer paused at \(clock.display)" : "Focus timer \(clock.display)")
+    }
+}
+
+struct CallRecordingIndicator: View {
+    @EnvironmentObject private var calls: CallRecorder
+    @EnvironmentObject private var state: AppState
+
+    var body: some View {
+        HStack(spacing: 0) {
+            Circle()
+                .fill(Color(red: 1, green: 0.32, blue: 0.34))
+                .frame(width: 8, height: 8)
+                .frame(maxWidth: .infinity)
+
+            Color.clear.frame(width: state.layout.notchSize.width)
+
+            Text(calls.elapsedText)
+                .font(.system(size: 13, weight: .semibold, design: .rounded))
+                .monospacedDigit()
+                .foregroundStyle(Color(red: 1, green: 0.45, blue: 0.45))
+                .frame(maxWidth: .infinity)
+        }
+        .padding(.horizontal, state.layout.notchTopRadius)
+        .frame(height: state.layout.notchSize.height)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Recording Teams, \(calls.elapsedText)")
     }
 }
 

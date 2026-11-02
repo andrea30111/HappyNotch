@@ -12,6 +12,7 @@ enum DS {
         static let insights = Color(red: 0.86, green: 0.68, blue: 0.60)
         static let settings = Color(red: 0.73, green: 0.75, blue: 0.78)
         static let voice = Color(red: 0.93, green: 0.50, blue: 0.58)
+        static let call = Color(red: 0.45, green: 0.62, blue: 0.84)
         static let workspace = Color(red: 0.95, green: 0.94, blue: 0.92)
     }
 
@@ -28,7 +29,7 @@ enum DS {
 }
 
 enum Tool: String, CaseIterable, Identifiable, Hashable {
-    case workspace, tasks, focus, notepad, calendar, week, clips, clipboard, insights, settings, neurons
+    case workspace, tasks, focus, notepad, calendar, week, clips, clipboard, insights, settings, neurons, call
 
     var id: String { rawValue }
 
@@ -45,6 +46,7 @@ enum Tool: String, CaseIterable, Identifiable, Hashable {
         case .insights: return "Insights"
         case .settings: return "Customize"
         case .neurons: return "Neurons"
+        case .call: return "Call"
         }
     }
 
@@ -61,6 +63,7 @@ enum Tool: String, CaseIterable, Identifiable, Hashable {
         case .insights: return "chart.bar.fill"
         case .settings: return "slider.horizontal.3"
         case .neurons: return "bubble.left.and.bubble.right.fill"
+        case .call: return "phone.fill"
         }
     }
 
@@ -77,6 +80,7 @@ enum Tool: String, CaseIterable, Identifiable, Hashable {
         case .insights: return DS.Palette.insights
         case .settings: return DS.Palette.settings
         case .neurons: return DS.Palette.events
+        case .call: return DS.Palette.call
         }
     }
 

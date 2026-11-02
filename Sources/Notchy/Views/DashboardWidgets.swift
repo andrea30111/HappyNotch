@@ -349,6 +349,7 @@ struct DashboardCard: View {
         case .clips: ClipsWidget()
         case .clipboard: ClipboardWidget()
         case .insights: InsightsWidget()
+        case .call: CallWidget()
         case .workspace, .settings, .neurons: EmptyView()
         }
     }
@@ -587,5 +588,34 @@ private struct InsightsWidget: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .accessibilityElement(children: .combine)
+    }
+}
+
+struct CallWidget: View {
+    @EnvironmentObject private var calls: CallRecorder
+
+    var body: some View {
+        Card(tint: DS.Palette.call) {
+            VStack(alignment: .leading, spacing: 8) {
+                WidgetHeader(tool: .call)
+                Text(calls.teamsRunning ? "Teams is open" : "Open Teams on this Mac")
+                    .font(.system(size: 11))
+                    .foregroundStyle(DS.inkSecondary)
+                if calls.isRecording {
+                    Text(calls.elapsedText)
+                        .font(.system(size: 22, weight: .semibold, design: .rounded))
+                        .monospacedDigit()
+                }
+                Button {
+                    Task { await calls.toggle() }
+                } label: {
+                    Label(calls.isRecording ? "Stop" : "Record call", systemImage: calls.isRecording ? "stop.fill" : "record.circle")
+                        .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(InkCapsuleButtonStyle(prominent: true))
+                .disabled(calls.phase == .preparing || calls.phase == .saving)
+            }
+        }
+        .onAppear { calls.refreshPresence() }
     }
 }

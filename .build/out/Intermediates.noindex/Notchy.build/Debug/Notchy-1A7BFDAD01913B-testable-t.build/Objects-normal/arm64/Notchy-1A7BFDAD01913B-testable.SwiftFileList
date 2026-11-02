@@ -13,6 +13,7 @@
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Persistence/Store.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/AppleNotesSync.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/CalendarService.swift
+/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/CallRecorder.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/ClipService.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/ClipboardHistory.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/FocusTimer.swift
@@ -23,6 +24,7 @@
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/ReminderScheduler.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/RemindersSync.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/SpeechService.swift
+/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/CallView.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/Cards/EventsCard.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/Cards/NotepadCard.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/Cards/TasksCard.swift
@@ -38,6 +40,7 @@
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/DesignSystem.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/HappyMascot.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/InsightsView.swift
+/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/NeuronsView.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/NotchRootView.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/PermissionsView.swift
 /Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/SettingsView.swift

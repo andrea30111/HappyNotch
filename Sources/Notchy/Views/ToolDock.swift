@@ -6,6 +6,7 @@ struct ToolDock: View {
     @EnvironmentObject private var state: AppState
     @EnvironmentObject private var speech: SpeechService
     @EnvironmentObject private var clips: ClipService
+    @EnvironmentObject private var calls: CallRecorder
 
     var body: some View {
         HStack(spacing: 10) {
@@ -15,7 +16,7 @@ struct ToolDock: View {
                     label: tool.title,
                     shortcut: tool.shortcut,
                     tint: tool.tint,
-                    isSelected: state.tool == tool,
+                    isSelected: state.tool == tool || (tool == .call && calls.isRecording),
                     index: index
                 ) {
                     withAnimation(DS.spring) { state.tool = tool }

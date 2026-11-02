@@ -11,7 +11,12 @@ let package = Package(
         .executableTarget(
             name: "Notchy",
             path: "Sources/Notchy",
-            linkerSettings: [.linkedFramework("Carbon"), .linkedFramework("WebKit")]
+            linkerSettings: [
+                .linkedFramework("Carbon"),
+                .linkedFramework("WebKit"),
+                .linkedFramework("ScreenCaptureKit"),
+                .linkedFramework("AVFoundation"),
+            ]
         ),
         .testTarget(
             name: "NotchyTests",

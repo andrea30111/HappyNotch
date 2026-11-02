@@ -83,6 +83,11 @@
     "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/CalendarService.bc",
     "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/CalendarService.o"
   },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/CallRecorder.swift" : {
+    "index-unit-output-path" : "/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/CallRecorder.o",
+    "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/CallRecorder.bc",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/CallRecorder.o"
+  },
   "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/ClipService.swift" : {
     "index-unit-output-path" : "/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/ClipService.o",
     "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/ClipService.bc",
@@ -132,6 +137,11 @@
     "index-unit-output-path" : "/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/SpeechService.o",
     "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/SpeechService.bc",
     "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/SpeechService.o"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/CallView.swift" : {
+    "index-unit-output-path" : "/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/CallView.o",
+    "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/CallView.bc",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/CallView.o"
   },
   "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/Cards/EventsCard.swift" : {
     "index-unit-output-path" : "/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/EventsCard.o",

@@ -48,7 +48,7 @@
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>HappyNotch transcribes your voice on-device to capture tasks and notes.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>HappyNotch uses the microphone only while you dictate a task or note.</string>
+	<string>HappyNotch uses the microphone while you dictate, and while you record a call you are on.</string>
 	<key>NSAppleEventsUsageDescription</key>
 	<string>HappyNotch lists your notes in Pages. When you turn on sync, it keeps each day's page in a "Notchy" folder and only edits those daily notes.</string>
 </dict>

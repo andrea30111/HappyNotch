@@ -36,6 +36,8 @@ struct ToolContentView: View {
             SettingsView()
         case .neurons:
             NeuronsView()
+        case .call:
+            CallView()
         }
     }
 }

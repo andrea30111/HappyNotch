@@ -121,6 +121,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     func applicationWillTerminate(_ notification: Notification) {
         if services.timer.isActive { services.timer.finish() }
+        services.calls.stopForQuit()
         services.store.saveNow()
         services.clipboard.saveNow()
         services.mcp.stop()
@@ -149,10 +150,16 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         // Macs without a notch show the running timer in the menu bar instead.
         services.timer.clock.$display
             .combineLatest(services.timer.$phase, services.state.$layout)
+            .combineLatest(services.calls.$elapsed, services.calls.$phase)
             .receive(on: RunLoop.main)
-            .sink { [weak item] display, phase, layout in
-                let active = phase == .running || phase == .paused
-                item?.button?.title = active && !layout.hasNotch ? " \(display)" : ""
+            .sink { [weak item] clock, elapsed, callPhase in
+                let (display, phase, layout) = clock
+                if callPhase == .recording, !layout.hasNotch {
+                    item?.button?.title = " \(CallRecorder.format(elapsed))"
+                } else {
+                    let active = phase == .running || phase == .paused
+                    item?.button?.title = active && !layout.hasNotch ? " \(display)" : ""
+                }
             }
             .store(in: &cancellables)
     }

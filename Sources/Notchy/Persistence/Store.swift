@@ -40,6 +40,12 @@ final class Store: ObservableObject {
         return dir
     }
 
+    nonisolated static var callsDirectory: URL {
+        let dir = supportDirectory.appendingPathComponent("Calls", isDirectory: true)
+        try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+        return dir
+    }
+
     nonisolated static func makeDecoder() -> JSONDecoder {
         let d = JSONDecoder()
         d.dateDecodingStrategy = .iso8601

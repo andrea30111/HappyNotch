@@ -26,6 +26,16 @@
     "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/AppleNotesTests.swiftdeps",
     "swiftmodule" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/AppleNotesTests~partial.swiftmodule"
   },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Tests/NotchyTests/CallRecorderTests.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/CallRecorderTests.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/CallRecorderTests.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/CallRecorderTests.dia",
+    "index-unit-output-path" : "/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/CallRecorderTests.o",
+    "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/CallRecorderTests.bc",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/CallRecorderTests.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/CallRecorderTests.swiftdeps",
+    "swiftmodule" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/CallRecorderTests~partial.swiftmodule"
+  },
   "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Tests/NotchyTests/DashboardLayoutTests.swift" : {
     "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/DashboardLayoutTests.swiftconstvalues",
     "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/DashboardLayoutTests.d",

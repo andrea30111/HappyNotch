@@ -22,9 +22,9 @@ final class PermissionsCenter: ObservableObject {
         var reason: String {
             switch self {
             case .calendar: return "Show today's events in the notch. Read-only."
-            case .microphone: return "Dictate tasks and notes."
+            case .microphone: return "Dictate tasks and notes, and record your side of a call."
             case .speech: return "Turn your voice into text, on-device."
-            case .screenRecording: return "Capture Clips of your screen."
+            case .screenRecording: return "Capture Clips, and record Teams audio during a call you are on."
             case .reminders: return "Optional. Only used if you turn on Reminders sync."
             }
         }

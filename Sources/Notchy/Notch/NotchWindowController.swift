@@ -138,7 +138,8 @@ final class NotchWindowController: NSObject {
         let width: CGFloat
         let height: CGFloat
         if layout.hasNotch {
-            width = layout.notchSize.width + (services.timer.isActive ? 150 : NotchLayout.mascotWing * 2)
+            let extended = services.timer.isActive || services.calls.isRecording
+            width = layout.notchSize.width + (extended ? 150 : NotchLayout.mascotWing * 2)
             height = layout.notchSize.height
         } else {
             width = 220
