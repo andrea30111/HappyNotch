@@ -1,0 +1,23 @@
+{
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/Cards/TasksCard.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/TasksCard.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/TasksCard.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/TasksCard.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/TasksCard.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/TasksCard.swiftdeps"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/Cards/TimerCard.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/TimerCard.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/TimerCard.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/TimerCard.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/TimerCard.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/TimerCard.swiftdeps"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/ClipboardView.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/ClipboardView.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/ClipboardView.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/ClipboardView.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/ClipboardView.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/ClipboardView.swiftdeps"
+  }
+}

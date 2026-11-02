@@ -99,7 +99,7 @@ private struct NotesSyncStatus: View {
                     Label("Allow Notes", systemImage: "exclamationmark.triangle.fill")
                 }
                 .buttonStyle(.plain)
-                .help("Allow Notchy to control Notes in System Settings › Privacy & Security › Automation")
+                .help("Allow HappyNotch to control Notes in System Settings › Privacy & Security › Automation")
                 .font(.system(size: 10.5, weight: .medium))
                 .foregroundStyle(.orange)
             } else if let error = notesSync.lastError {

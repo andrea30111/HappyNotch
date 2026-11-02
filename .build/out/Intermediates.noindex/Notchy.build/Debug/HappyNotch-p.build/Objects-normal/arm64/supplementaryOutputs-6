@@ -1,0 +1,23 @@
+{
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/ClipService.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/ClipService.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/ClipService.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/ClipService.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/ClipService.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/ClipService.swiftdeps"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/ClipboardHistory.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/ClipboardHistory.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/ClipboardHistory.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/ClipboardHistory.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/ClipboardHistory.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/ClipboardHistory.swiftdeps"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/FocusTimer.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/FocusTimer.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/FocusTimer.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/FocusTimer.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/FocusTimer.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/FocusTimer.swiftdeps"
+  }
+}

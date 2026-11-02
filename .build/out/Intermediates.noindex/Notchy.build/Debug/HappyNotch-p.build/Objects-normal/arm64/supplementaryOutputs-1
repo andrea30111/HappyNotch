@@ -1,0 +1,23 @@
+{
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/App/AppDelegate.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/AppDelegate.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/AppDelegate.swiftdeps"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/App/AppState.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/AppState.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/AppState.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/AppState.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/AppState.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/AppState.swiftdeps"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/App/NotchyMain.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NotchyMain.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NotchyMain.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NotchyMain.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NotchyMain.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NotchyMain.swiftdeps"
+  }
+}

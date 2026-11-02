@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'AllExcludingTests' in project 'Aggregate'
+➜ Explicit dependency on target 'HappyNotch-product' in project 'Notchy'
+Target 'HappyNotch-product' in project 'Notchy' (no dependencies)

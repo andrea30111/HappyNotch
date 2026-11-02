@@ -1,0 +1,23 @@
+{
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/SpeechService.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/SpeechService.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/SpeechService.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/SpeechService.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/SpeechService.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/SpeechService.swiftdeps"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/Cards/EventsCard.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/EventsCard.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/EventsCard.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/EventsCard.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/EventsCard.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/EventsCard.swiftdeps"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/Cards/NotepadCard.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/NotepadCard.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/NotepadCard.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/NotepadCard.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/NotepadCard.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-p.build/Objects-normal/arm64/NotepadCard.swiftdeps"
+  }
+}

@@ -41,7 +41,7 @@ final class SpeechService: ObservableObject {
             guard let self else { return }
             self.onAuthorizationPrompt?(false)
             guard granted else {
-                self.lastError = "Allow Microphone and Speech Recognition for Notchy in System Settings › Privacy & Security."
+                self.lastError = "Allow Microphone and Speech Recognition for HappyNotch in System Settings › Privacy & Security."
                 return
             }
             self.begin(owner: owner, onText: onText)

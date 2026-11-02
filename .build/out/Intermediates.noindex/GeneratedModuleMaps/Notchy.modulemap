@@ -1,0 +1,4 @@
+module Notchy {
+header "Notchy-Swift.h"
+export *
+}

@@ -1,0 +1,2763 @@
+[
+  {
+    "contents" : {
+      "guid" : "Workspace:/Users/andreamarchetti/Documents/Progetti/HappyNotch",
+      "name" : "Notchy",
+      "path" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch",
+      "projects" : [
+        "4402f9ab1b6a7b6168b10ac5cff474d6a54d141a9ce043ff98e3e878e6668781",
+        "40031a72368d26807c653ed7fbb73338ec0b342d38af983e9795c650f80a8afb"
+      ]
+    },
+    "signature" : "fedfe24a603cfe70403d2427b07c5bbf8eb9592349e5a8514a70837c0ba9eb5e",
+    "type" : "workspace"
+  },
+  {
+    "contents" : {
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "CLANG_ENABLE_MODULES[__platform_filter=driverkit]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=ios-maccatalyst]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=ios;ios-simulator]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=macos]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=tvos;tvos-simulator]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=watchos;watchos-simulator]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=xros;xros-simulator]" : "YES",
+            "CODE_SIGNING_REQUIRED" : "NO",
+            "CODE_SIGN_IDENTITY" : "",
+            "COMPILER_WORKING_DIRECTORY" : "$(WORKSPACE_DIR)",
+            "COPY_PHASE_STRIP" : "NO",
+            "DEBUG_INFORMATION_FORMAT" : "dwarf",
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=driverkit]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=ios-maccatalyst]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=ios;ios-simulator]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=macos]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=tvos;tvos-simulator]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=watchos;watchos-simulator]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=xros;xros-simulator]" : "@rpath",
+            "ENABLE_NS_ASSERTIONS" : "YES",
+            "ENABLE_TESTABILITY" : "YES",
+            "ENABLE_TESTING_SEARCH_PATHS" : "YES",
+            "ENTITLEMENTS_REQUIRED" : "NO",
+            "GCC_OPTIMIZATION_LEVEL" : "0",
+            "GCC_PREPROCESSOR_DEFINITIONS" : [
+              "$(inherited)",
+              "SWIFT_PACKAGE",
+              "DEBUG=1"
+            ],
+            "INDEX_ENABLE_DATA_STORE" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "KEEP_PRIVATE_EXTERNS" : "NO",
+            "LIBTOOL_NO_WARNING_FOR_NO_SYMBOLS" : "YES",
+            "LINKER_DRIVER" : "auto",
+            "MACOSX_DEPLOYMENT_TARGET" : "14.0",
+            "ONLY_ACTIVE_ARCH" : "YES",
+            "OTHER_CFLAGS" : [
+              "$(inherited)",
+              "-DXcode"
+            ],
+            "OTHER_LDRFLAGS" : [
+
+            ],
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "-DXcode"
+            ],
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SKIP_INSTALL" : "YES",
+            "SPECIALIZATION_SDK_OPTIONS[__platform_filter=macos]" : [
+
+            ],
+            "SUPPORTED_PLATFORMS" : [
+              "$(AVAILABLE_PLATFORMS)"
+            ],
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_PACKAGE",
+              "DEBUG"
+            ],
+            "SWIFT_INSTALL_OBJC_HEADER" : "NO",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "",
+            "SWIFT_OPTIMIZATION_LEVEL" : "-Onone",
+            "TARGETED_DEVICE_FAMILY" : "",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "USE_HEADERMAP" : "NO",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE:happynotch::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "CLANG_ENABLE_MODULES[__platform_filter=driverkit]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=ios-maccatalyst]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=ios;ios-simulator]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=macos]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=tvos;tvos-simulator]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=watchos;watchos-simulator]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=xros;xros-simulator]" : "YES",
+            "CODE_SIGNING_REQUIRED" : "NO",
+            "CODE_SIGN_IDENTITY" : "",
+            "COMPILER_WORKING_DIRECTORY" : "$(WORKSPACE_DIR)",
+            "COPY_PHASE_STRIP" : "YES",
+            "DEBUG_INFORMATION_FORMAT" : "dwarf-with-dsym",
+            "DEPLOYMENT_POSTPROCESSING" : "YES",
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=driverkit]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=ios-maccatalyst]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=ios;ios-simulator]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=macos]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=tvos;tvos-simulator]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=watchos;watchos-simulator]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=xros;xros-simulator]" : "@rpath",
+            "ENABLE_TESTING_SEARCH_PATHS" : "YES",
+            "ENTITLEMENTS_REQUIRED" : "NO",
+            "GCC_OPTIMIZATION_LEVEL" : "s",
+            "GCC_PREPROCESSOR_DEFINITIONS" : [
+              "$(inherited)",
+              "SWIFT_PACKAGE"
+            ],
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "KEEP_PRIVATE_EXTERNS" : "NO",
+            "LIBTOOL_NO_WARNING_FOR_NO_SYMBOLS" : "YES",
+            "LINKER_DRIVER" : "auto",
+            "MACOSX_DEPLOYMENT_TARGET" : "14.0",
+            "OTHER_CFLAGS" : [
+              "$(inherited)",
+              "-DXcode"
+            ],
+            "OTHER_LDRFLAGS" : [
+
+            ],
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "-DXcode"
+            ],
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SKIP_INSTALL" : "YES",
+            "SPECIALIZATION_SDK_OPTIONS[__platform_filter=macos]" : [
+
+            ],
+            "SUPPORTED_PLATFORMS" : [
+              "$(AVAILABLE_PLATFORMS)"
+            ],
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_PACKAGE"
+            ],
+            "SWIFT_INSTALL_OBJC_HEADER" : "NO",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "",
+            "SWIFT_OPTIMIZATION_LEVEL" : "-Owholemodule",
+            "TARGETED_DEVICE_FAMILY" : "",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "USE_HEADERMAP" : "NO",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE:happynotch::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "defaultConfigurationName" : "Release",
+      "groupTree" : {
+        "children" : [
+          {
+            "children" : [
+
+            ],
+            "guid" : "PACKAGE:happynotch::MAINGROUP::REF_0",
+            "name" : "AdditionalFiles",
+            "path" : "/",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+
+            ],
+            "guid" : "PACKAGE:happynotch::MAINGROUP::REF_1",
+            "name" : "Binaries",
+            "path" : "/",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_2::REF_0",
+                "name" : "AppleNotesTests.swift",
+                "path" : "AppleNotesTests.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_2::REF_1",
+                "name" : "DashboardLayoutTests.swift",
+                "path" : "DashboardLayoutTests.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_2::REF_2",
+                "name" : "NaturalLanguageParserTests.swift",
+                "path" : "NaturalLanguageParserTests.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:happynotch::MAINGROUP::REF_2",
+            "name" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Tests/NotchyTests",
+            "path" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Tests/NotchyTests",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_0",
+                "name" : "App/AppDelegate.swift",
+                "path" : "App/AppDelegate.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_1",
+                "name" : "App/AppState.swift",
+                "path" : "App/AppState.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_2",
+                "name" : "App/NotchyMain.swift",
+                "path" : "App/NotchyMain.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_3",
+                "name" : "App/Services.swift",
+                "path" : "App/Services.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_4",
+                "name" : "MCP/HTTPMessage.swift",
+                "path" : "MCP/HTTPMessage.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_5",
+                "name" : "MCP/MCPServer.swift",
+                "path" : "MCP/MCPServer.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_6",
+                "name" : "MCP/MCPStdioBridge.swift",
+                "path" : "MCP/MCPStdioBridge.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_7",
+                "name" : "MCP/MCPToolbox.swift",
+                "path" : "MCP/MCPToolbox.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_8",
+                "name" : "Models/Models.swift",
+                "path" : "Models/Models.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_9",
+                "name" : "Notch/NotchGeometry.swift",
+                "path" : "Notch/NotchGeometry.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_10",
+                "name" : "Notch/NotchPanel.swift",
+                "path" : "Notch/NotchPanel.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_11",
+                "name" : "Notch/NotchWindowController.swift",
+                "path" : "Notch/NotchWindowController.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_12",
+                "name" : "Persistence/Store.swift",
+                "path" : "Persistence/Store.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_13",
+                "name" : "Services/AppleNotesSync.swift",
+                "path" : "Services/AppleNotesSync.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_14",
+                "name" : "Services/CalendarService.swift",
+                "path" : "Services/CalendarService.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_15",
+                "name" : "Services/ClipService.swift",
+                "path" : "Services/ClipService.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_16",
+                "name" : "Services/ClipboardHistory.swift",
+                "path" : "Services/ClipboardHistory.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_17",
+                "name" : "Services/FocusTimer.swift",
+                "path" : "Services/FocusTimer.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_18",
+                "name" : "Services/HotKeyManager.swift",
+                "path" : "Services/HotKeyManager.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_19",
+                "name" : "Services/Insights.swift",
+                "path" : "Services/Insights.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_20",
+                "name" : "Services/NaturalLanguageParser.swift",
+                "path" : "Services/NaturalLanguageParser.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_21",
+                "name" : "Services/PermissionsCenter.swift",
+                "path" : "Services/PermissionsCenter.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_22",
+                "name" : "Services/ReminderScheduler.swift",
+                "path" : "Services/ReminderScheduler.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_23",
+                "name" : "Services/RemindersSync.swift",
+                "path" : "Services/RemindersSync.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_24",
+                "name" : "Services/SpeechService.swift",
+                "path" : "Services/SpeechService.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_25",
+                "name" : "Views/Cards/EventsCard.swift",
+                "path" : "Views/Cards/EventsCard.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_26",
+                "name" : "Views/Cards/NotepadCard.swift",
+                "path" : "Views/Cards/NotepadCard.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_27",
+                "name" : "Views/Cards/TasksCard.swift",
+                "path" : "Views/Cards/TasksCard.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_28",
+                "name" : "Views/Cards/TimerCard.swift",
+                "path" : "Views/Cards/TimerCard.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_29",
+                "name" : "Views/ClipboardView.swift",
+                "path" : "Views/ClipboardView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_30",
+                "name" : "Views/ClipsView.swift",
+                "path" : "Views/ClipsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_31",
+                "name" : "Views/Components/DotMatrixText.swift",
+                "path" : "Views/Components/DotMatrixText.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_32",
+                "name" : "Views/Components/MicButton.swift",
+                "path" : "Views/Components/MicButton.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_33",
+                "name" : "Views/Components/NoteEditor.swift",
+                "path" : "Views/Components/NoteEditor.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_34",
+                "name" : "Views/Components/QuickAddField.swift",
+                "path" : "Views/Components/QuickAddField.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_35",
+                "name" : "Views/DashboardView.swift",
+                "path" : "Views/DashboardView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_36",
+                "name" : "Views/DashboardWidgets.swift",
+                "path" : "Views/DashboardWidgets.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_37",
+                "name" : "Views/DesignSystem.swift",
+                "path" : "Views/DesignSystem.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_38",
+                "name" : "Views/HappyMascot.swift",
+                "path" : "Views/HappyMascot.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_39",
+                "name" : "Views/InsightsView.swift",
+                "path" : "Views/InsightsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_40",
+                "name" : "Views/NotchRootView.swift",
+                "path" : "Views/NotchRootView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_41",
+                "name" : "Views/PermissionsView.swift",
+                "path" : "Views/PermissionsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_42",
+                "name" : "Views/SettingsView.swift",
+                "path" : "Views/SettingsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_43",
+                "name" : "Views/ToolContentView.swift",
+                "path" : "Views/ToolContentView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_44",
+                "name" : "Views/ToolDock.swift",
+                "path" : "Views/ToolDock.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_45",
+                "name" : "Views/WeekPlannerView.swift",
+                "path" : "Views/WeekPlannerView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3",
+            "name" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy",
+            "path" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_0",
+                "name" : "App/AppDelegate.swift",
+                "path" : "App/AppDelegate.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_1",
+                "name" : "App/AppState.swift",
+                "path" : "App/AppState.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_2",
+                "name" : "App/NotchyMain.swift",
+                "path" : "App/NotchyMain.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_3",
+                "name" : "App/Services.swift",
+                "path" : "App/Services.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_4",
+                "name" : "MCP/HTTPMessage.swift",
+                "path" : "MCP/HTTPMessage.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_5",
+                "name" : "MCP/MCPServer.swift",
+                "path" : "MCP/MCPServer.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_6",
+                "name" : "MCP/MCPStdioBridge.swift",
+                "path" : "MCP/MCPStdioBridge.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_7",
+                "name" : "MCP/MCPToolbox.swift",
+                "path" : "MCP/MCPToolbox.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_8",
+                "name" : "Models/Models.swift",
+                "path" : "Models/Models.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_9",
+                "name" : "Notch/NotchGeometry.swift",
+                "path" : "Notch/NotchGeometry.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_10",
+                "name" : "Notch/NotchPanel.swift",
+                "path" : "Notch/NotchPanel.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_11",
+                "name" : "Notch/NotchWindowController.swift",
+                "path" : "Notch/NotchWindowController.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_12",
+                "name" : "Persistence/Store.swift",
+                "path" : "Persistence/Store.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_13",
+                "name" : "Services/AppleNotesSync.swift",
+                "path" : "Services/AppleNotesSync.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_14",
+                "name" : "Services/CalendarService.swift",
+                "path" : "Services/CalendarService.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_15",
+                "name" : "Services/ClipService.swift",
+                "path" : "Services/ClipService.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_16",
+                "name" : "Services/ClipboardHistory.swift",
+                "path" : "Services/ClipboardHistory.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_17",
+                "name" : "Services/FocusTimer.swift",
+                "path" : "Services/FocusTimer.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_18",
+                "name" : "Services/HotKeyManager.swift",
+                "path" : "Services/HotKeyManager.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_19",
+                "name" : "Services/Insights.swift",
+                "path" : "Services/Insights.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_20",
+                "name" : "Services/NaturalLanguageParser.swift",
+                "path" : "Services/NaturalLanguageParser.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_21",
+                "name" : "Services/PermissionsCenter.swift",
+                "path" : "Services/PermissionsCenter.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_22",
+                "name" : "Services/ReminderScheduler.swift",
+                "path" : "Services/ReminderScheduler.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_23",
+                "name" : "Services/RemindersSync.swift",
+                "path" : "Services/RemindersSync.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_24",
+                "name" : "Services/SpeechService.swift",
+                "path" : "Services/SpeechService.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_25",
+                "name" : "Views/Cards/EventsCard.swift",
+                "path" : "Views/Cards/EventsCard.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_26",
+                "name" : "Views/Cards/NotepadCard.swift",
+                "path" : "Views/Cards/NotepadCard.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_27",
+                "name" : "Views/Cards/TasksCard.swift",
+                "path" : "Views/Cards/TasksCard.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_28",
+                "name" : "Views/Cards/TimerCard.swift",
+                "path" : "Views/Cards/TimerCard.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_29",
+                "name" : "Views/ClipboardView.swift",
+                "path" : "Views/ClipboardView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_30",
+                "name" : "Views/ClipsView.swift",
+                "path" : "Views/ClipsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_31",
+                "name" : "Views/Components/DotMatrixText.swift",
+                "path" : "Views/Components/DotMatrixText.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_32",
+                "name" : "Views/Components/MicButton.swift",
+                "path" : "Views/Components/MicButton.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_33",
+                "name" : "Views/Components/NoteEditor.swift",
+                "path" : "Views/Components/NoteEditor.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_34",
+                "name" : "Views/Components/QuickAddField.swift",
+                "path" : "Views/Components/QuickAddField.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_35",
+                "name" : "Views/DashboardView.swift",
+                "path" : "Views/DashboardView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_36",
+                "name" : "Views/DashboardWidgets.swift",
+                "path" : "Views/DashboardWidgets.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_37",
+                "name" : "Views/DesignSystem.swift",
+                "path" : "Views/DesignSystem.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_38",
+                "name" : "Views/HappyMascot.swift",
+                "path" : "Views/HappyMascot.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_39",
+                "name" : "Views/InsightsView.swift",
+                "path" : "Views/InsightsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_40",
+                "name" : "Views/NotchRootView.swift",
+                "path" : "Views/NotchRootView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_41",
+                "name" : "Views/PermissionsView.swift",
+                "path" : "Views/PermissionsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_42",
+                "name" : "Views/SettingsView.swift",
+                "path" : "Views/SettingsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_43",
+                "name" : "Views/ToolContentView.swift",
+                "path" : "Views/ToolContentView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_44",
+                "name" : "Views/ToolDock.swift",
+                "path" : "Views/ToolDock.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_45",
+                "name" : "Views/WeekPlannerView.swift",
+                "path" : "Views/WeekPlannerView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4",
+            "name" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy",
+            "path" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          }
+        ],
+        "guid" : "PACKAGE:happynotch::MAINGROUP",
+        "name" : "",
+        "path" : "",
+        "sourceTree" : "<group>",
+        "type" : "group"
+      },
+      "guid" : "PACKAGE:happynotch",
+      "path" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Package.swift",
+      "projectDirectory" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch",
+      "projectIsPackage" : "true",
+      "projectName" : "Notchy",
+      "targets" : [
+        "9772aef1debbf73b7442199ae7fb42c8b6afa2aefeba6fcebaf84d6080c798d8",
+        "7ab51776fe4036fc01b6ce9753ba6e8a0ec6a1bc7df9440b4f5ae4912af8928b",
+        "ab6e14fccf484c05c1d6812978bd7a6640427ffacfa44adf42c66ee1bb7adf95",
+        "f3732f6344d5344df9b2326af073fe48c0033ac6d30763c98fb13296d07b6fe2",
+        "fc5ad06ec502c8a77a5bd56590fc36cf4be0a7d654fc44f7437368876cea3dcd"
+      ]
+    },
+    "signature" : "4402f9ab1b6a7b6168b10ac5cff474d6a54d141a9ce043ff98e3e878e6668781",
+    "type" : "project"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "APPLE_TEST_BUNDLE_RPATH" : "$(APPLE_TEST_BUNDLE_RPATH_SHALLOW_BUNDLE_$(SHALLOW_BUNDLE:default=NO))",
+            "APPLE_TEST_BUNDLE_RPATH_SHALLOW_BUNDLE_NO" : "@loader_path/../../..",
+            "APPLE_TEST_BUNDLE_RPATH_SHALLOW_BUNDLE_YES" : "@loader_path/../..",
+            "BUILD_SERVER_PROTOCOL_TARGET_TAGS" : [
+              "$(inherited)",
+              "test"
+            ],
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "NO",
+            "GENERATE_INFOPLIST_FILE" : "YES",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "INDEX_ENABLE_DATA_STORE" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "17.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "17.0",
+            "LD_RUNPATH_SEARCH_PATHS" : [
+              "$(RPATH_ORIGIN)/Frameworks",
+              "$(RPATH_ORIGIN)/../Frameworks",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=driverkit]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=ios-maccatalyst]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=ios;ios-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=macos]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=tvos;tvos-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=watchos;watchos-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=xros;xros-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "MACOSX_DEPLOYMENT_TARGET" : "14.0",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "happynotch.NotchyTests",
+            "PRODUCT_MODULE_NAME" : "NotchyTests",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_PACKAGE_NAME" : "happynotch",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/NotchyTests.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/NotchyTests.symbolgraphs",
+            "TARGET_NAME" : "NotchyTests",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "TVOS_DEPLOYMENT_TARGET" : "17.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "26.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "APPLE_TEST_BUNDLE_RPATH" : "$(APPLE_TEST_BUNDLE_RPATH_SHALLOW_BUNDLE_$(SHALLOW_BUNDLE:default=NO))",
+            "APPLE_TEST_BUNDLE_RPATH_SHALLOW_BUNDLE_NO" : "@loader_path/../../..",
+            "APPLE_TEST_BUNDLE_RPATH_SHALLOW_BUNDLE_YES" : "@loader_path/../..",
+            "BUILD_SERVER_PROTOCOL_TARGET_TAGS" : [
+              "$(inherited)",
+              "test"
+            ],
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "NO",
+            "GENERATE_INFOPLIST_FILE" : "YES",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "INDEX_ENABLE_DATA_STORE" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "17.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "17.0",
+            "LD_RUNPATH_SEARCH_PATHS" : [
+              "$(RPATH_ORIGIN)/Frameworks",
+              "$(RPATH_ORIGIN)/../Frameworks",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=driverkit]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=ios-maccatalyst]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=ios;ios-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=macos]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=tvos;tvos-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=watchos;watchos-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=xros;xros-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "MACOSX_DEPLOYMENT_TARGET" : "14.0",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "happynotch.NotchyTests",
+            "PRODUCT_MODULE_NAME" : "NotchyTests",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_PACKAGE_NAME" : "happynotch",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/NotchyTests.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/NotchyTests.symbolgraphs",
+            "TARGET_NAME" : "NotchyTests",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "TVOS_DEPLOYMENT_TARGET" : "17.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "26.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_2::REF_0",
+              "guid" : "PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_2::REF_1",
+              "guid" : "PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests::BUILDPHASE_0::1",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_2::REF_2",
+              "guid" : "PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests::BUILDPHASE_0::2",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        },
+        {
+          "buildFiles" : [
+            {
+              "guid" : "PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests::BUILDPHASE_1::0",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable"
+            }
+          ],
+          "guid" : "PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests::BUILDPHASE_1",
+          "type" : "com.apple.buildphase.frameworks"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests",
+      "name" : "NotchyTests-product",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.bundle.unit-test",
+      "type" : "standard"
+    },
+    "signature" : "9772aef1debbf73b7442199ae7fb42c8b6afa2aefeba6fcebaf84d6080c798d8",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "17.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "17.0",
+            "LD_RUNPATH_SEARCH_PATHS" : [
+              "$(inherited)",
+              "$(RPATH_ORIGIN)"
+            ],
+            "LINKER_DRIVER" : "swiftc",
+            "MACOSX_DEPLOYMENT_TARGET" : "14.0",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "happynotch.NotchyTests-test-runner",
+            "PRODUCT_MODULE_NAME" : "NotchyTests_test_runner",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "NO",
+            "SWIFT_VERSION" : "5.0",
+            "TARGET_NAME" : "NotchyTests-test-runner",
+            "TVOS_DEPLOYMENT_TARGET" : "17.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "26.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-TARGET:NotchyTests_test_runner::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "17.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "17.0",
+            "LD_RUNPATH_SEARCH_PATHS" : [
+              "$(inherited)",
+              "$(RPATH_ORIGIN)"
+            ],
+            "LINKER_DRIVER" : "swiftc",
+            "MACOSX_DEPLOYMENT_TARGET" : "14.0",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "happynotch.NotchyTests-test-runner",
+            "PRODUCT_MODULE_NAME" : "NotchyTests_test_runner",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "NO",
+            "SWIFT_VERSION" : "5.0",
+            "TARGET_NAME" : "NotchyTests-test-runner",
+            "TVOS_DEPLOYMENT_TARGET" : "17.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "26.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-TARGET:NotchyTests_test_runner::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+
+          ],
+          "guid" : "PACKAGE-TARGET:NotchyTests_test_runner::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        },
+        {
+          "buildFiles" : [
+            {
+              "guid" : "PACKAGE-TARGET:NotchyTests_test_runner::BUILDPHASE_1::0",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:NotchyTests_test_runner::BUILDPHASE_1",
+          "type" : "com.apple.buildphase.frameworks"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "PACKAGE-TARGET:NotchyTests_test_runner",
+      "name" : "NotchyTests-test-runner",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:NotchyTests_test_runner",
+        "name" : "NotchyTests-test-runner",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.tool.swiftpm-test-runner",
+      "type" : "standard"
+    },
+    "signature" : "7ab51776fe4036fc01b6ce9753ba6e8a0ec6a1bc7df9440b4f5ae4912af8928b",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "NO",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "MACOSX_DEPLOYMENT_TARGET" : "14.0",
+            "OTHER_LDFLAGS" : [
+              "$(inherited)",
+              "-framework",
+              "Carbon"
+            ],
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "$(OTHER_SWIFT_FLAGS_ENABLE_LIBFUZZER_$(ENABLE_LIBFUZZER))"
+            ],
+            "OTHER_SWIFT_FLAGS_ENABLE_LIBFUZZER_YES" : [
+              "-Xfrontend",
+              "-entry-point-function-name",
+              "-Xfrontend",
+              "Notchy_main"
+            ],
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "happynotch.HappyNotch",
+            "PRODUCT_MODULE_NAME" : "Notchy",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_INSTALL_MODULE" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_PACKAGE_NAME" : "happynotch",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Notchy.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Notchy.symbolgraphs",
+            "TARGET_NAME" : "HappyNotch",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "NO",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "MACOSX_DEPLOYMENT_TARGET" : "14.0",
+            "OTHER_LDFLAGS" : [
+              "$(inherited)",
+              "-framework",
+              "Carbon"
+            ],
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "$(OTHER_SWIFT_FLAGS_ENABLE_LIBFUZZER_$(ENABLE_LIBFUZZER))"
+            ],
+            "OTHER_SWIFT_FLAGS_ENABLE_LIBFUZZER_YES" : [
+              "-Xfrontend",
+              "-entry-point-function-name",
+              "-Xfrontend",
+              "Notchy_main"
+            ],
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "happynotch.HappyNotch",
+            "PRODUCT_MODULE_NAME" : "Notchy",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_INSTALL_MODULE" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_PACKAGE_NAME" : "happynotch",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Notchy.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Notchy.symbolgraphs",
+            "TARGET_NAME" : "HappyNotch",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_0",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_1",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::1",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_2",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::2",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_3",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::3",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_4",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::4",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_5",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::5",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_6",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::6",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_7",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::7",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_8",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::8",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_9",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::9",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_10",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::10",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_11",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::11",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_12",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::12",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_13",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::13",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_14",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::14",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_15",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::15",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_16",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::16",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_17",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::17",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_18",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::18",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_19",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::19",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_20",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::20",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_21",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::21",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_22",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::22",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_23",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::23",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_24",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::24",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_25",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::25",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_26",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::26",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_27",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::27",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_28",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::28",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_29",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::29",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_30",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::30",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_31",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::31",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_32",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::32",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_33",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::33",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_34",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::34",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_35",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::35",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_36",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::36",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_37",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::37",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_38",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::38",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_39",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::39",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_40",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::40",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_41",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::41",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_42",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::42",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_43",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::43",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_44",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::44",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_45",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::45",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+
+      ],
+      "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch",
+      "name" : "HappyNotch-product",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.tool",
+      "type" : "standard"
+    },
+    "signature" : "ab6e14fccf484c05c1d6812978bd7a6640427ffacfa44adf42c66ee1bb7adf95",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "MODULEMAP_FILE_CONTENTS" : "module Notchy {\nheader \"Notchy-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/Notchy.modulemap",
+            "OTHER_LDFLAGS" : [
+              "$(inherited)",
+              "-framework",
+              "Carbon"
+            ],
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "-Xfrontend",
+              "-entry-point-function-name",
+              "-Xfrontend",
+              "Notchy_main"
+            ],
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "happynotch.Notchy",
+            "PRODUCT_MODULE_NAME" : "Notchy",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "Notchy-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "happynotch",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Notchy.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "Notchy",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Notchy.symbolgraphs",
+            "TARGET_BUILD_DIR" : "$(TARGET_BUILD_DIR)/ExecutableModules",
+            "TARGET_NAME" : "Notchy-1A7BFDAD01913B-testable",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "LIBRARY_SEARCH_PATHS[__platform_filter=windows-msvc]" : [
+                "$(inherited)",
+                "$(TARGET_BUILD_DIR)/ExecutableModules"
+              ],
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/Notchy.modulemap",
+                "$(inherited)"
+              ],
+              "OTHER_LDFLAGS" : [
+                "$(inherited)",
+                "-framework",
+                "Carbon"
+              ]
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "MODULEMAP_FILE_CONTENTS" : "module Notchy {\nheader \"Notchy-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/Notchy.modulemap",
+            "OTHER_LDFLAGS" : [
+              "$(inherited)",
+              "-framework",
+              "Carbon"
+            ],
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "-Xfrontend",
+              "-entry-point-function-name",
+              "-Xfrontend",
+              "Notchy_main"
+            ],
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "happynotch.Notchy",
+            "PRODUCT_MODULE_NAME" : "Notchy",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "Notchy-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "happynotch",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Notchy.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "Notchy",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Notchy.symbolgraphs",
+            "TARGET_BUILD_DIR" : "$(TARGET_BUILD_DIR)/ExecutableModules",
+            "TARGET_NAME" : "Notchy-1A7BFDAD01913B-testable",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "LIBRARY_SEARCH_PATHS[__platform_filter=windows-msvc]" : [
+                "$(inherited)",
+                "$(TARGET_BUILD_DIR)/ExecutableModules"
+              ],
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/Notchy.modulemap",
+                "$(inherited)"
+              ],
+              "OTHER_LDFLAGS" : [
+                "$(inherited)",
+                "-framework",
+                "Carbon"
+              ]
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_0",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_1",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::1",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_2",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::2",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_3",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::3",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_4",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::4",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_5",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::5",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_6",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::6",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_7",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::7",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_8",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::8",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_9",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::9",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_10",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::10",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_11",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::11",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_12",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::12",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_13",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::13",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_14",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::14",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_15",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::15",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_16",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::16",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_17",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::17",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_18",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::18",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_19",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::19",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_20",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::20",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_21",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::21",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_22",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::22",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_23",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::23",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_24",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::24",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_25",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::25",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_26",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::26",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_27",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::27",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_28",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::28",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_29",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::29",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_30",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::30",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_31",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::31",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_32",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::32",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_33",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::33",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_34",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::34",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_35",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::35",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_36",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::36",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_37",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::37",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_38",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::38",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_39",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::39",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_40",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::40",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_41",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::41",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_42",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::42",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_43",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::43",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_44",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::44",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_45",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::45",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+
+      ],
+      "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable",
+      "name" : "Notchy",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "org.swift.product-type.common.object",
+      "type" : "standard"
+    },
+    "signature" : "f3732f6344d5344df9b2326af073fe48c0033ac6d30763c98fb13296d07b6fe2",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+
+          },
+          "guid" : "PACKAGE-PRODUCT:happynotch-NotchyPackageTests.NotchyPackageTests::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+
+          },
+          "guid" : "PACKAGE-PRODUCT:happynotch-NotchyPackageTests.NotchyPackageTests::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:NotchyTests_test_runner",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "PACKAGE-PRODUCT:happynotch-NotchyPackageTests.NotchyPackageTests",
+      "name" : "NotchyPackageTests-product",
+      "type" : "aggregate"
+    },
+    "signature" : "fc5ad06ec502c8a77a5bd56590fc36cf4be0a7d654fc44f7437368876cea3dcd",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "YES",
+            "SUPPORTED_PLATFORMS" : [
+              "$(AVAILABLE_PLATFORMS)"
+            ]
+          },
+          "guid" : "AGGREGATE::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "YES",
+            "SUPPORTED_PLATFORMS" : [
+              "$(AVAILABLE_PLATFORMS)"
+            ]
+          },
+          "guid" : "AGGREGATE::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "defaultConfigurationName" : "Release",
+      "developmentRegion" : "en",
+      "groupTree" : {
+        "children" : [
+
+        ],
+        "guid" : "AGGREGATE::MAINGROUP",
+        "name" : "",
+        "path" : "",
+        "sourceTree" : "<group>",
+        "type" : "group"
+      },
+      "guid" : "AGGREGATE",
+      "path" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Package.swift",
+      "projectDirectory" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch",
+      "projectIsPackage" : "true",
+      "projectName" : "Aggregate",
+      "targets" : [
+        "5adad66e2d0ef29120841b205928276e7faf0465bc5a55fa717f57bc0d47ae9a",
+        "f2c4915aeb0eab20f51e731b83e4d706aea8ab3ccec8392ae7d0fa7fabc7da20"
+      ]
+    },
+    "signature" : "40031a72368d26807c653ed7fbb73338ec0b342d38af983e9795c650f80a8afb",
+    "type" : "project"
+  },
+  {
+    "contents" : {
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+
+          },
+          "guid" : "ALL-INCLUDING-TESTS::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+
+          },
+          "guid" : "ALL-INCLUDING-TESTS::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-PRODUCT:happynotch_NotchyTests.NotchyTests",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:NotchyTests_test_runner",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "ALL-INCLUDING-TESTS",
+      "name" : "AllIncludingTests",
+      "type" : "aggregate"
+    },
+    "signature" : "5adad66e2d0ef29120841b205928276e7faf0465bc5a55fa717f57bc0d47ae9a",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+
+          },
+          "guid" : "ALL-EXCLUDING-TESTS::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+
+          },
+          "guid" : "ALL-EXCLUDING-TESTS::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "ALL-EXCLUDING-TESTS",
+      "name" : "AllExcludingTests",
+      "type" : "aggregate"
+    },
+    "signature" : "f2c4915aeb0eab20f51e731b83e4d706aea8ab3ccec8392ae7d0fa7fabc7da20",
+    "type" : "target"
+  }
+]

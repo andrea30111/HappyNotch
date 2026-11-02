@@ -1,0 +1,23 @@
+{
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Persistence/Store.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/Store.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/Store.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/Store.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/Store.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/Store.swiftdeps"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/AppleNotesSync.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/AppleNotesSync.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/AppleNotesSync.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/AppleNotesSync.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/AppleNotesSync.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/AppleNotesSync.swiftdeps"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Services/CalendarService.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/CalendarService.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/CalendarService.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/CalendarService.dia",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/CalendarService.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/Notchy-1A7BFDAD01913B-testable-t.build/Objects-normal/arm64/CalendarService.swiftdeps"
+  }
+}

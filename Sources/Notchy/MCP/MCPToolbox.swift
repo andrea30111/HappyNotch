@@ -64,7 +64,7 @@ final class MCPToolbox {
                 "protocolVersion": version,
                 "capabilities": ["tools": ["listChanged": false]],
                 "serverInfo": ["name": "notchy", "title": AppInfo.name, "version": AppInfo.version],
-                "instructions": "Notchy is the user's local task list, focus timer, daily notepad and read-only calendar. Dates are ISO 8601 in the user's time zone. add_task understands natural language like 'call mom tomorrow at 5pm'.",
+                "instructions": "HappyNotch is the user's local task list, focus timer, daily notepad and read-only calendar. Dates are ISO 8601 in the user's time zone. add_task understands natural language like 'call mom tomorrow at 5pm'.",
             ])
         case "ping":
             return rpcResult(id: id, [:])
@@ -153,7 +153,7 @@ final class MCPToolbox {
             return ["date": DayKey.key(for: day), "text": store.note(for: day)]
 
         case "list_events":
-            guard calendar.hasAccess else { throw ToolError(message: "Calendar access hasn't been granted in Notchy.") }
+            guard calendar.hasAccess else { throw ToolError(message: "Calendar access hasn't been granted in HappyNotch.") }
             let days = min(max(args["days"] as? Int ?? 1, 1), 31)
             let start = try (args["start_date"] as? String).map { try requireDay($0) } ?? cal.startOfDay(for: Date())
             let end = cal.date(byAdding: .day, value: days, to: start) ?? start

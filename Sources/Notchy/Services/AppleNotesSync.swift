@@ -220,7 +220,7 @@ final class AppleNotesSync: ObservableObject {
     private func report(_ error: Error) {
         if let scriptError = error as? NotesScript.ScriptError, scriptError.isPermissionDenied {
             needsPermission = true
-            lastError = "Allow Notchy to control Notes in System Settings › Privacy & Security › Automation."
+            lastError = "Allow HappyNotch to control Notes in System Settings › Privacy & Security › Automation."
         } else {
             lastError = error.localizedDescription
         }

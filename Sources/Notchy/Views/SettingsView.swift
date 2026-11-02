@@ -167,7 +167,7 @@ private struct SyncSettings: View {
                     }
                 }
             } footer: {
-                Text("Notchy only reads events to show today's schedule. It never creates, edits or deletes them.")
+                Text("HappyNotch only reads events to show today's schedule. It never creates, edits or deletes them.")
             }
 
             Section {
@@ -226,7 +226,7 @@ private struct SyncSettings: View {
             } header: {
                 Text("Notes")
             } footer: {
-                Text("Off by default. Each day's page becomes a note \"Notchy · date\" in a \"Notchy\" folder in Notes, and edits flow both ways. If both sides change at once, the notepad wins. Notchy never touches your other notes. macOS will ask once to let Notchy control Notes.")
+                Text("Off by default. Each day's page becomes a note \"Notchy · date\" in a \"Notchy\" folder in Notes, and edits flow both ways. If both sides change at once, the notepad wins. HappyNotch never touches your other notes. macOS will ask once to let HappyNotch control Notes.")
             }
         }
     }
@@ -261,7 +261,7 @@ private struct AgentSettings: View {
     @State private var copied: String?
 
     private var executablePath: String {
-        Bundle.main.executablePath ?? "/Applications/Notchy.app/Contents/MacOS/Notchy"
+        Bundle.main.executablePath ?? "/Applications/HappyNotch.app/Contents/MacOS/HappyNotch"
     }
 
     var body: some View {
@@ -317,7 +317,7 @@ private struct AgentSettings: View {
         """
         {
           "mcpServers": {
-            "notchy": {
+            "happynotch": {
               "command": "\(executablePath)",
               "args": ["--mcp-stdio"]
             }
@@ -330,7 +330,7 @@ private struct AgentSettings: View {
         """
         {
           "mcpServers": {
-            "notchy": {
+            "happynotch": {
               "url": "http://127.0.0.1:\(store.settings.mcpPort)/mcp",
               "headers": { "Authorization": "Bearer \(store.settings.mcpToken)" }
             }
@@ -400,7 +400,7 @@ private struct DataSettings: View {
     private func exportData() {
         let panel = NSSavePanel()
         panel.allowedContentTypes = [.json]
-        panel.nameFieldStringValue = "Notchy Backup \(DayKey.key(for: Date())).json"
+        panel.nameFieldStringValue = "HappyNotch Backup \(DayKey.key(for: Date())).json"
         runPanel(panel) { url in
             try store.exportData(to: url)
             message = "Exported to \(url.lastPathComponent)"

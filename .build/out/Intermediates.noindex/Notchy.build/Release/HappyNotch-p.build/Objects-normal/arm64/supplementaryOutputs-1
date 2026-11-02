@@ -1,0 +1,11 @@
+{
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/App/AppDelegate.swift" : {
+    "abi-baseline-json" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/Notchy.abi.json",
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/HappyNotch-primary.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/HappyNotch-primary.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/HappyNotch-primary.dia",
+    "swiftdoc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/Notchy.swiftdoc",
+    "swiftmodule" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/Notchy.swiftmodule",
+    "swiftsourceinfo" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/Notchy.swiftsourceinfo"
+  }
+}

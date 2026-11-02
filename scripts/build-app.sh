@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Builds build/Notchy.app (Apple Silicon). Usage: scripts/build-app.sh [debug|release]
+# Builds build/HappyNotch.app (Apple Silicon). Usage: scripts/build-app.sh [debug|release]
 # Set CODESIGN_IDENTITY="Developer ID Application: …" to sign for distribution; defaults to ad-hoc.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
 CONFIG="${1:-release}"
-APP_NAME="Notchy"
+APP_NAME="HappyNotch"
 APP="build/${APP_NAME}.app"
 
 swift build -c "$CONFIG" --arch arm64

@@ -88,7 +88,7 @@ struct EventsCard: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(calendar.isDenied
                  ? "Calendar access is turned off. Allow it in System Settings to see your events here."
-                 : "See today's events right in the notch. Notchy only reads your calendars.")
+                 : "See today's events right in the notch. HappyNotch only reads your calendars.")
                 .font(.system(size: 11.5))
                 .foregroundStyle(DS.inkSecondary)
                 .fixedSize(horizontal: false, vertical: true)

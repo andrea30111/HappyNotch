@@ -3,32 +3,46 @@ import SwiftUI
 struct TasksCard: View {
     @EnvironmentObject private var store: Store
 
-    @State private var day = Calendar.current.startOfDay(for: Date())
     @State private var showCompleted = false
     @State private var editingID: UUID?
+    /// Heights of the two row stacks, used to shrink the upper list when Today needs the room.
+    @State private var contentHeights: [String: CGFloat] = [:]
 
-    private var calendar: Calendar { .current }
-    private var openTasks: [TaskItem] { store.tasks(on: day, completed: false) }
-    private var doneTasks: [TaskItem] { store.tasks(on: day, completed: true) }
-
-    private var title: String {
-        if calendar.isDateInToday(day) { return "Today's tasks" }
-        if calendar.isDateInTomorrow(day) { return "Tomorrow" }
-        if calendar.isDateInYesterday(day) { return "Yesterday" }
-        return day.formatted(.dateTime.weekday(.wide))
+    private var allTasks: [TaskItem] {
+        store.tasks
+            .filter { $0.isCompleted == showCompleted }
+            .sorted { lhs, rhs in
+                if showCompleted { return (lhs.completedAt ?? .distantPast) > (rhs.completedAt ?? .distantPast) }
+                return lhs.sortIndex < rhs.sortIndex
+            }
     }
+
+    private var todayTasks: [TaskItem] { store.tasks(on: Date(), completed: showCompleted) }
 
     var body: some View {
         Card(tint: DS.Palette.tasks) {
             VStack(alignment: .leading, spacing: 10) {
-                header
-                PillSegment(options: [
-                    .init(value: false, title: "To do", count: openTasks.count),
-                    .init(value: true, title: "Completed", count: doneTasks.count),
-                ], selection: $showCompleted)
-                list
+                HStack(spacing: 6) {
+                    CardTitle(title: "Tasks")
+                    Spacer(minLength: 4)
+                    PillSegment(options: [
+                        .init(value: false, title: "To do", count: store.tasks.filter { !$0.isCompleted }.count),
+                        .init(value: true, title: "Completed", count: store.tasks.filter(\.isCompleted).count),
+                    ], selection: $showCompleted)
+                }
+                GeometryReader { geo in
+                    let split = splitHeights(total: geo.size.height)
+                    VStack(alignment: .leading, spacing: 8) {
+                        taskSection("All", id: "all", items: allTasks, empty: showCompleted ? "Nothing completed yet" : "No tasks yet.", height: split.all)
+                        taskSection("Today", id: "today", items: todayTasks, empty: showCompleted ? "Nothing completed today" : "Nothing due today.", height: split.today)
+                    }
+                }
+                .frame(maxHeight: .infinity)
+                .onPreferenceChange(TaskSectionHeightKey.self) { heights in
+                    if heights != contentHeights { contentHeights = heights }
+                }
                 HStack(spacing: 8) {
-                    QuickAddField(defaultDay: calendar.isDateInToday(day) ? nil : day)
+                    QuickAddField()
                     Text("Drag to reorder")
                         .font(.system(size: 10))
                         .foregroundStyle(DS.inkTertiary)
@@ -52,65 +66,71 @@ struct TasksCard: View {
         .animation(DS.snappy, value: editingID)
     }
 
-    private var header: some View {
-        HStack(spacing: 6) {
-            CardTitle(title: title)
-            Spacer(minLength: 4)
-            InkIconButton(symbol: "chevron.left", label: "Previous day") { shiftDay(-1) }
-            Button {
-                withAnimation(DS.snappy) { day = calendar.startOfDay(for: Date()) }
-            } label: {
-                Label(day.formatted(.dateTime.day().month(.abbreviated)), systemImage: "calendar")
+    /// Each list gets half the space. When Today has more rows than fit in that half and All
+    /// does not, All shrinks to its content and Today takes the rest.
+    private func splitHeights(total: CGFloat) -> (all: CGFloat, today: CGFloat) {
+        let gap: CGFloat = 8
+        let usable = max(0, total - gap)
+        let half = usable / 2
+        let label: CGFloat = 18
+        let allBlock = (contentHeights["all"] ?? 0) + label
+        let todayBlock = (contentHeights["today"] ?? 0) + label
+        guard todayBlock > half, allBlock > 0, allBlock < half else { return (half, usable - half) }
+        let allHeight = min(allBlock, half)
+        return (allHeight, usable - allHeight)
+    }
+
+    private func taskSection(_ title: String, id: String, items: [TaskItem], empty: String, height: CGFloat) -> some View {
+        VStack(alignment: .leading, spacing: 2) {
+            HStack(spacing: 6) {
+                Text(title)
+                    .font(.system(size: 11, weight: .semibold))
+                Text("\(items.count)")
                     .font(.system(size: 11, weight: .medium))
-                    .padding(.horizontal, 7)
-                    .frame(height: 20)
-                    .background(Capsule().fill(Color.white.opacity(0.4)))
+                    .foregroundStyle(DS.inkSecondary)
             }
-            .buttonStyle(.plain)
-            .help("Jump to today")
-            .accessibilityLabel("Showing \(day.formatted(date: .complete, time: .omitted)). Jump to today")
-            InkIconButton(symbol: "chevron.right", label: "Next day") { shiftDay(1) }
-        }
-    }
-
-    private var list: some View {
-        let items = showCompleted ? doneTasks : openTasks
-        return ScrollView(showsIndicators: false) {
-            LazyVStack(alignment: .leading, spacing: 0) {
-                ForEach(items) { task in
-                    TaskRow(task: task) { editingID = task.id }
-                        .draggable(task.id.uuidString) {
-                            Text(task.title)
-                                .font(.system(size: 12, weight: .medium))
-                                .padding(8)
-                                .background(RoundedRectangle(cornerRadius: 8).fill(DS.Palette.tasks))
-                        }
-                        .dropDestination(for: String.self) { ids, _ in
-                            guard let raw = ids.first, let source = UUID(uuidString: raw), source != task.id else { return false }
-                            withAnimation(DS.snappy) { store.moveTask(source, before: task.id) }
-                            return true
-                        }
-                }
-                if items.isEmpty {
-                    VStack(spacing: 6) {
-                        Image(systemName: showCompleted ? "checkmark.circle" : "sparkles")
-                            .font(.system(size: 18))
-                        Text(showCompleted ? "Nothing completed yet" : "All clear. Add something below.")
-                            .font(.system(size: 12))
+            .accessibilityElement(children: .combine)
+            .accessibilityAddTraits(.isHeader)
+            ScrollView(showsIndicators: false) {
+                VStack(alignment: .leading, spacing: 0) {
+                    ForEach(items) { task in
+                        TaskRow(task: task) { editingID = task.id }
+                            .draggable(task.id.uuidString) {
+                                Text(task.title)
+                                    .font(.system(size: 12, weight: .medium))
+                                    .padding(8)
+                                    .background(RoundedRectangle(cornerRadius: 8).fill(DS.Palette.tasks))
+                            }
+                            .dropDestination(for: String.self) { ids, _ in
+                                guard let raw = ids.first, let source = UUID(uuidString: raw), source != task.id else { return false }
+                                withAnimation(DS.snappy) { store.moveTask(source, before: task.id) }
+                                return true
+                            }
                     }
-                    .foregroundStyle(DS.inkTertiary)
-                    .frame(maxWidth: .infinity)
-                    .padding(.top, 24)
+                    if items.isEmpty {
+                        Text(empty)
+                            .font(.system(size: 12))
+                            .foregroundStyle(DS.inkTertiary)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.vertical, 8)
+                    }
+                }
+                .fixedSize(horizontal: false, vertical: true)
+                .overlay {
+                    GeometryReader { proxy in
+                        Color.clear.preference(key: TaskSectionHeightKey.self, value: [id: proxy.size.height])
+                    }
                 }
             }
         }
-        .frame(maxHeight: .infinity)
+        .frame(height: height, alignment: .top)
     }
+}
 
-    private func shiftDay(_ delta: Int) {
-        withAnimation(DS.snappy) {
-            day = calendar.date(byAdding: .day, value: delta, to: day) ?? day
-        }
+private struct TaskSectionHeightKey: PreferenceKey {
+    static var defaultValue: [String: CGFloat] = [:]
+    static func reduce(value: inout [String: CGFloat], nextValue: () -> [String: CGFloat]) {
+        value.merge(nextValue(), uniquingKeysWith: { $1 })
     }
 }
 

@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleName</key>
-	<string>Notchy</string>
+	<string>HappyNotch</string>
 	<key>CFBundleDisplayName</key>
-	<string>Notchy</string>
+	<string>HappyNotch</string>
 	<key>CFBundleIdentifier</key>
 	<string>app.notchy.Notchy</string>
 	<key>CFBundleExecutable</key>
-	<string>Notchy</string>
+	<string>HappyNotch</string>
 	<key>CFBundleIconFile</key>
 	<string>AppIcon</string>
 	<key>CFBundlePackageType</key>
@@ -38,18 +38,18 @@
 		</dict>
 	</array>
 	<key>NSCalendarsFullAccessUsageDescription</key>
-	<string>Notchy shows your upcoming events in the notch. It only reads your calendars and never creates, edits or deletes events.</string>
+	<string>HappyNotch shows your upcoming events in the notch. It only reads your calendars and never creates, edits or deletes events.</string>
 	<key>NSCalendarsUsageDescription</key>
-	<string>Notchy shows your upcoming events in the notch. It only reads your calendars and never creates, edits or deletes events.</string>
+	<string>HappyNotch shows your upcoming events in the notch. It only reads your calendars and never creates, edits or deletes events.</string>
 	<key>NSRemindersFullAccessUsageDescription</key>
-	<string>When you turn on Reminders sync, Notchy keeps your tasks in sync with Apple Reminders so they reach your iPhone and Apple Watch.</string>
+	<string>When you turn on Reminders sync, HappyNotch keeps your tasks in sync with Apple Reminders so they reach your iPhone and Apple Watch.</string>
 	<key>NSRemindersUsageDescription</key>
-	<string>When you turn on Reminders sync, Notchy keeps your tasks in sync with Apple Reminders so they reach your iPhone and Apple Watch.</string>
+	<string>When you turn on Reminders sync, HappyNotch keeps your tasks in sync with Apple Reminders so they reach your iPhone and Apple Watch.</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>Notchy transcribes your voice on-device to capture tasks and notes.</string>
+	<string>HappyNotch transcribes your voice on-device to capture tasks and notes.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Notchy uses the microphone only while you dictate a task or note.</string>
+	<string>HappyNotch uses the microphone only while you dictate a task or note.</string>
 	<key>NSAppleEventsUsageDescription</key>
-	<string>When you turn on Apple Notes sync, Notchy keeps your daily notes in a "Notchy" folder in Notes. It never touches your other notes.</string>
+	<string>When you turn on Apple Notes sync, HappyNotch keeps your daily notes in a "Notchy" folder in Notes. It never touches your other notes.</string>
 </dict>
 </plist>

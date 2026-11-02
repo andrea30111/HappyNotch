@@ -1,6 +1,6 @@
 import Foundation
 
-/// `Notchy --mcp-stdio`: forwards newline-delimited JSON-RPC from stdin to the running app's
+/// `HappyNotch --mcp-stdio`: forwards newline-delimited JSON-RPC from stdin to the running app's
 /// local HTTP endpoint, so stdio-only MCP clients can connect without a second copy of the data.
 enum MCPStdioBridge {
     private struct SettingsEnvelope: Decodable { let settings: AppSettings }
@@ -9,8 +9,8 @@ enum MCPStdioBridge {
         let settings = (try? Data(contentsOf: Store.defaultDataURL))
             .flatMap { try? Store.makeDecoder().decode(SettingsEnvelope.self, from: $0).settings }
         guard let settings, settings.mcpEnabled else {
-            log("Notchy's AI agent server is turned off. Enable it in Notchy › Customize › AI Agents.")
-            drainWithErrors(message: "Notchy's AI agent server is turned off. Enable it in Notchy › Customize › AI Agents.")
+            log("HappyNotch's AI agent server is turned off. Enable it in HappyNotch › Customize › AI Agents.")
+            drainWithErrors(message: "HappyNotch's AI agent server is turned off. Enable it in HappyNotch › Customize › AI Agents.")
         }
         guard let url = URL(string: "http://127.0.0.1:\(settings.mcpPort)/mcp") else { exit(1) }
 
@@ -37,8 +37,8 @@ enum MCPStdioBridge {
                 write(responseData)
             } else if status != 202 {
                 writeError(for: line, message: status == 0
-                    ? "Notchy isn't running. Open Notchy and try again."
-                    : "Notchy returned HTTP \(status).")
+                    ? "HappyNotch isn't running. Open HappyNotch and try again."
+                    : "HappyNotch returned HTTP \(status).")
             }
         }
         exit(0)

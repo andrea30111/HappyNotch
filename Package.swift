@@ -5,7 +5,7 @@ let package = Package(
     name: "Notchy",
     platforms: [.macOS(.v14)],
     products: [
-        .executable(name: "Notchy", targets: ["Notchy"]),
+        .executable(name: "HappyNotch", targets: ["Notchy"]),
     ],
     targets: [
         .executableTarget(

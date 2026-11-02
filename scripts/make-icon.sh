@@ -5,6 +5,6 @@ cd "$(dirname "$0")/.."
 
 swift build -c debug
 ICONSET="$(mktemp -d)/AppIcon.iconset"
-"$(swift build -c debug --show-bin-path)/Notchy" --render-icon "$ICONSET"
+"$(swift build -c debug --show-bin-path)/HappyNotch" --render-icon "$ICONSET"
 iconutil -c icns "$ICONSET" -o Resources/AppIcon.icns
 echo "Wrote Resources/AppIcon.icns"

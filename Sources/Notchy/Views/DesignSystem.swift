@@ -2,17 +2,17 @@ import SwiftUI
 
 enum DS {
     enum Palette {
-        static let tasks = Color(red: 0.639, green: 0.757, blue: 0.616)
-        static let focus = Color(red: 0.690, green: 0.651, blue: 0.859)
-        static let notes = Color(red: 0.890, green: 0.835, blue: 0.494)
-        static let events = Color(red: 0.639, green: 0.737, blue: 0.871)
-        static let week = Color(red: 0.910, green: 0.710, blue: 0.588)
-        static let clips = Color(red: 0.886, green: 0.659, blue: 0.749)
-        static let clipboard = Color(red: 0.851, green: 0.792, blue: 0.698)
-        static let insights = Color(red: 0.545, green: 0.796, blue: 0.784)
-        static let settings = Color(red: 0.760, green: 0.760, blue: 0.780)
-        static let voice = Color(red: 0.980, green: 0.580, blue: 0.470)
-        static let workspace = Color(red: 0.960, green: 0.960, blue: 0.960)
+        static let tasks = Color(red: 0.86, green: 0.70, blue: 0.78)
+        static let focus = Color(red: 0.58, green: 0.80, blue: 0.76)
+        static let notes = Color(red: 0.66, green: 0.74, blue: 0.88)
+        static let events = Color(red: 0.91, green: 0.80, blue: 0.52)
+        static let week = Color(red: 0.72, green: 0.66, blue: 0.86)
+        static let clips = Color(red: 0.68, green: 0.80, blue: 0.64)
+        static let clipboard = Color(red: 0.91, green: 0.74, blue: 0.62)
+        static let insights = Color(red: 0.86, green: 0.68, blue: 0.60)
+        static let settings = Color(red: 0.73, green: 0.75, blue: 0.78)
+        static let voice = Color(red: 0.93, green: 0.50, blue: 0.58)
+        static let workspace = Color(red: 0.95, green: 0.94, blue: 0.92)
     }
 
     static let ink = Color.black.opacity(0.82)
