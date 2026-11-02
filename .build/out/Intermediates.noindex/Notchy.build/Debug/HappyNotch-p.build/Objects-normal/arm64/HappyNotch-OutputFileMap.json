@@ -406,6 +406,16 @@
     "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/InsightsView.swiftdeps",
     "swiftmodule" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/InsightsView~partial.swiftmodule"
   },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/NeuronsView.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NeuronsView.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NeuronsView.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NeuronsView.dia",
+    "index-unit-output-path" : "/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NeuronsView.o",
+    "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NeuronsView.bc",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NeuronsView.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NeuronsView.swiftdeps",
+    "swiftmodule" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NeuronsView~partial.swiftmodule"
+  },
   "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/NotchRootView.swift" : {
     "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NotchRootView.swiftconstvalues",
     "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/HappyNotch-p.build/Objects-normal/arm64/NotchRootView.d",

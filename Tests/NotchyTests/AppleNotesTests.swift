@@ -19,6 +19,16 @@ final class AppleNotesTests: XCTestCase {
         XCTAssertEqual(html, "<div><h1>Notchy · 2026-11-01</h1></div><div>a &lt; b &amp; c</div><div><br></div><div>d</div>")
     }
 
+    func testParsesLibraryOutput() {
+        let output = "id1\u{1F}Groceries\u{1F}2026-11-02T09:30:00\u{1E}id2\u{1F}Notchy · 2026-11-01\u{1F}2026-11-01T18:00:00"
+        let notes = NotesScript.parseLibraryOutput(output)
+        XCTAssertEqual(notes.map(\.id), ["id1", "id2"])
+        XCTAssertEqual(notes[0].title, "Groceries")
+        XCTAssertEqual(notes[0].modified, NotesScript.stampDate(from: "2026-11-02T09:30:00"))
+        XCTAssertEqual(NotesScript.day(fromTitle: notes[1].title), "2026-11-01")
+        XCTAssertTrue(NotesScript.parseLibraryOutput("").isEmpty)
+    }
+
     func testParsesFetchOutput() {
         let output = "id1\u{1F}Notchy · 2026-11-01\u{1F}Notchy · 2026-11-01\nhello\u{1E}id2\u{1F}Groceries\u{1F}Groceries\nmilk"
         let notes = NotesScript.parseFetchOutput(output)

@@ -28,7 +28,7 @@ enum DS {
 }
 
 enum Tool: String, CaseIterable, Identifiable, Hashable {
-    case workspace, tasks, focus, notepad, calendar, week, clips, clipboard, insights, settings
+    case workspace, tasks, focus, notepad, calendar, week, clips, clipboard, insights, settings, neurons
 
     var id: String { rawValue }
 
@@ -44,6 +44,7 @@ enum Tool: String, CaseIterable, Identifiable, Hashable {
         case .clipboard: return "Clipboard"
         case .insights: return "Insights"
         case .settings: return "Customize"
+        case .neurons: return "Neurons"
         }
     }
 
@@ -59,6 +60,7 @@ enum Tool: String, CaseIterable, Identifiable, Hashable {
         case .clipboard: return "doc.on.clipboard"
         case .insights: return "chart.bar.fill"
         case .settings: return "slider.horizontal.3"
+        case .neurons: return "bubble.left.and.bubble.right.fill"
         }
     }
 
@@ -74,12 +76,13 @@ enum Tool: String, CaseIterable, Identifiable, Hashable {
         case .clipboard: return DS.Palette.clipboard
         case .insights: return DS.Palette.insights
         case .settings: return DS.Palette.settings
+        case .neurons: return DS.Palette.events
         }
     }
 
     var shortcut: String {
-        let index = (Tool.allCases.firstIndex(of: self) ?? 0) + 1
-        return "⌘\(index % 10)"
+        guard let index = Tool.allCases.firstIndex(of: self), index < 10 else { return "" }
+        return "⌘\((index + 1) % 10)"
     }
 }
 

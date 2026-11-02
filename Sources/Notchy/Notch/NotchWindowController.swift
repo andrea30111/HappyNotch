@@ -15,6 +15,7 @@ final class NotchWindowController: NSObject {
     private var openWork: DispatchWorkItem?
     private var closeWork: DispatchWorkItem?
     private var screenFrame: NSRect = .zero
+    private var shrinkWork: DispatchWorkItem?
     private var cancellables = Set<AnyCancellable>()
 
     private var state: AppState { services.state }
@@ -26,6 +27,7 @@ final class NotchWindowController: NSObject {
 
         let host = NSHostingView(rootView: NotchRootView().environmentServices(services))
         host.sizingOptions = []
+        host.autoresizingMask = [.width, .height]
         panel.contentView = host
         panel.onResignKey = { [weak self] in self?.handleResignKey() }
 
@@ -40,6 +42,12 @@ final class NotchWindowController: NSObject {
                 self?.reposition()
                 self?.panel.orderFrontRegardless()
             }
+            .store(in: &cancellables)
+
+        Publishers.CombineLatest(state.$tool, state.$isOpen)
+            .dropFirst()
+            .receive(on: RunLoop.main)
+            .sink { [weak self] _, _ in self?.applyFrame(animated: true) }
             .store(in: &cancellables)
     }
 
@@ -99,13 +107,28 @@ final class NotchWindowController: NSObject {
     // MARK: Geometry
 
     private func reposition() {
+        applyFrame(animated: false)
+    }
+
+    /// Grows the window as soon as Neurons opens, and shrinks it only after the island has animated down.
+    private func applyFrame(animated: Bool) {
+        shrinkWork?.cancel()
+        shrinkWork = nil
         guard let screen = NotchGeometry.preferredScreen() else { return }
         let layout = NotchGeometry(screen: screen).layout
         if state.layout != layout { state.layout = layout }
         screenFrame = screen.frame
-        let size = NotchLayout.windowSize
+        let tool: Tool = state.isOpen ? state.tool : .workspace
+        let size = layout.windowSize(for: tool, screenHeight: screen.frame.height)
         let frame = NSRect(x: screen.frame.midX - size.width / 2, y: screen.frame.maxY - size.height, width: size.width, height: size.height)
-        if panel.frame != frame { panel.setFrame(frame, display: false) }
+        guard panel.frame != frame else { return }
+        if animated, frame.height < panel.frame.height {
+            let work = DispatchWorkItem { [weak self] in self?.applyFrame(animated: false) }
+            shrinkWork = work
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4, execute: work)
+            return
+        }
+        panel.setFrame(frame, display: false)
     }
 
     /// Area that opens the panel on hover: the notch (plus the timer indicator if visible),
@@ -127,7 +150,7 @@ final class NotchWindowController: NSObject {
     /// Panel plus the floating tool dock below it.
     private var interactiveRect: NSRect {
         let layout = state.layout
-        let height = layout.panelTopOffset + layout.openPanelSize.height + 12 + NotchLayout.dockHeight + 30
+        let height = layout.panelTopOffset + layout.openPanelSize(for: state.tool).height + 12 + NotchLayout.dockHeight + 30
         let width = NotchLayout.panelWidth + 24
         return NSRect(x: screenFrame.midX - width / 2, y: screenFrame.maxY - height, width: width, height: height + 1)
     }

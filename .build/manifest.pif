@@ -5,11 +5,11 @@
       "name" : "Notchy",
       "path" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch",
       "projects" : [
-        "4402f9ab1b6a7b6168b10ac5cff474d6a54d141a9ce043ff98e3e878e6668781",
+        "b6b5ea17f930aae9c82f69e9d51f365e09b96afeff3d98438afed4002c1d20f6",
         "40031a72368d26807c653ed7fbb73338ec0b342d38af983e9795c650f80a8afb"
       ]
     },
-    "signature" : "fedfe24a603cfe70403d2427b07c5bbf8eb9592349e5a8514a70837c0ba9eb5e",
+    "signature" : "0bfa942645e3948dd9067405437766c01041724c44fa6a2f42e51a6201eae691",
     "type" : "workspace"
   },
   {
@@ -554,6 +554,14 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_40",
+                "name" : "Views/NeuronsView.swift",
+                "path" : "Views/NeuronsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_41",
                 "name" : "Views/NotchRootView.swift",
                 "path" : "Views/NotchRootView.swift",
                 "sourceTree" : "<group>",
@@ -561,7 +569,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_41",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_42",
                 "name" : "Views/PermissionsView.swift",
                 "path" : "Views/PermissionsView.swift",
                 "sourceTree" : "<group>",
@@ -569,7 +577,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_42",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_43",
                 "name" : "Views/SettingsView.swift",
                 "path" : "Views/SettingsView.swift",
                 "sourceTree" : "<group>",
@@ -577,7 +585,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_43",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_44",
                 "name" : "Views/ToolContentView.swift",
                 "path" : "Views/ToolContentView.swift",
                 "sourceTree" : "<group>",
@@ -585,7 +593,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_44",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_45",
                 "name" : "Views/ToolDock.swift",
                 "path" : "Views/ToolDock.swift",
                 "sourceTree" : "<group>",
@@ -593,7 +601,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_45",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_46",
                 "name" : "Views/WeekPlannerView.swift",
                 "path" : "Views/WeekPlannerView.swift",
                 "sourceTree" : "<group>",
@@ -931,6 +939,14 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_40",
+                "name" : "Views/NeuronsView.swift",
+                "path" : "Views/NeuronsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_41",
                 "name" : "Views/NotchRootView.swift",
                 "path" : "Views/NotchRootView.swift",
                 "sourceTree" : "<group>",
@@ -938,7 +954,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_41",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_42",
                 "name" : "Views/PermissionsView.swift",
                 "path" : "Views/PermissionsView.swift",
                 "sourceTree" : "<group>",
@@ -946,7 +962,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_42",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_43",
                 "name" : "Views/SettingsView.swift",
                 "path" : "Views/SettingsView.swift",
                 "sourceTree" : "<group>",
@@ -954,7 +970,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_43",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_44",
                 "name" : "Views/ToolContentView.swift",
                 "path" : "Views/ToolContentView.swift",
                 "sourceTree" : "<group>",
@@ -962,7 +978,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_44",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_45",
                 "name" : "Views/ToolDock.swift",
                 "path" : "Views/ToolDock.swift",
                 "sourceTree" : "<group>",
@@ -970,7 +986,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_45",
+                "guid" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_46",
                 "name" : "Views/WeekPlannerView.swift",
                 "path" : "Views/WeekPlannerView.swift",
                 "sourceTree" : "<group>",
@@ -998,12 +1014,12 @@
       "targets" : [
         "9772aef1debbf73b7442199ae7fb42c8b6afa2aefeba6fcebaf84d6080c798d8",
         "7ab51776fe4036fc01b6ce9753ba6e8a0ec6a1bc7df9440b4f5ae4912af8928b",
-        "ab6e14fccf484c05c1d6812978bd7a6640427ffacfa44adf42c66ee1bb7adf95",
-        "f3732f6344d5344df9b2326af073fe48c0033ac6d30763c98fb13296d07b6fe2",
+        "1e7d1fec9464cd6fcd7831112b3e94e0426486906f7bd17a9e9aa7531f6b570f",
+        "563db8d24ca34e48fd2c265d52c95c2d0a48d55e8cd4fcb202b5429dbdd1b875",
         "fc5ad06ec502c8a77a5bd56590fc36cf4be0a7d654fc44f7437368876cea3dcd"
       ]
     },
-    "signature" : "4402f9ab1b6a7b6168b10ac5cff474d6a54d141a9ce043ff98e3e878e6668781",
+    "signature" : "b6b5ea17f930aae9c82f69e9d51f365e09b96afeff3d98438afed4002c1d20f6",
     "type" : "project"
   },
   {
@@ -1390,7 +1406,9 @@
             "OTHER_LDFLAGS" : [
               "$(inherited)",
               "-framework",
-              "Carbon"
+              "Carbon",
+              "-framework",
+              "WebKit"
             ],
             "OTHER_SWIFT_FLAGS" : [
               "$(inherited)",
@@ -1442,7 +1460,9 @@
             "OTHER_LDFLAGS" : [
               "$(inherited)",
               "-framework",
-              "Carbon"
+              "Carbon",
+              "-framework",
+              "WebKit"
             ],
             "OTHER_SWIFT_FLAGS" : [
               "$(inherited)",
@@ -1899,6 +1919,15 @@
 
               ],
               "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_3::REF_46",
+              "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0::46",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
             }
           ],
           "guid" : "PACKAGE-PRODUCT:happynotch_HappyNotch.HappyNotch::BUILDPHASE_0",
@@ -1924,7 +1953,7 @@
       "productTypeIdentifier" : "com.apple.product-type.tool",
       "type" : "standard"
     },
-    "signature" : "ab6e14fccf484c05c1d6812978bd7a6640427ffacfa44adf42c66ee1bb7adf95",
+    "signature" : "1e7d1fec9464cd6fcd7831112b3e94e0426486906f7bd17a9e9aa7531f6b570f",
     "type" : "target"
   },
   {
@@ -1943,7 +1972,9 @@
             "OTHER_LDFLAGS" : [
               "$(inherited)",
               "-framework",
-              "Carbon"
+              "Carbon",
+              "-framework",
+              "WebKit"
             ],
             "OTHER_SWIFT_FLAGS" : [
               "$(inherited)",
@@ -1998,7 +2029,9 @@
               "OTHER_LDFLAGS" : [
                 "$(inherited)",
                 "-framework",
-                "Carbon"
+                "Carbon",
+                "-framework",
+                "WebKit"
               ]
             }
           },
@@ -2016,7 +2049,9 @@
             "OTHER_LDFLAGS" : [
               "$(inherited)",
               "-framework",
-              "Carbon"
+              "Carbon",
+              "-framework",
+              "WebKit"
             ],
             "OTHER_SWIFT_FLAGS" : [
               "$(inherited)",
@@ -2070,7 +2105,9 @@
               "OTHER_LDFLAGS" : [
                 "$(inherited)",
                 "-framework",
-                "Carbon"
+                "Carbon",
+                "-framework",
+                "WebKit"
               ]
             }
           },
@@ -2493,6 +2530,15 @@
 
               ],
               "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:happynotch::MAINGROUP::REF_4::REF_46",
+              "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0::46",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
             }
           ],
           "guid" : "PACKAGE-TARGET:Notchy-1A7BFDAD01913B-testable::BUILDPHASE_0",
@@ -2518,7 +2564,7 @@
       "productTypeIdentifier" : "org.swift.product-type.common.object",
       "type" : "standard"
     },
-    "signature" : "f3732f6344d5344df9b2326af073fe48c0033ac6d30763c98fb13296d07b6fe2",
+    "signature" : "563db8d24ca34e48fd2c265d52c95c2d0a48d55e8cd4fcb202b5429dbdd1b875",
     "type" : "target"
   },
   {

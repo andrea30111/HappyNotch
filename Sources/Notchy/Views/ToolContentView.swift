@@ -34,6 +34,8 @@ struct ToolContentView: View {
             InsightsView()
         case .settings:
             SettingsView()
+        case .neurons:
+            NeuronsView()
         }
     }
 }

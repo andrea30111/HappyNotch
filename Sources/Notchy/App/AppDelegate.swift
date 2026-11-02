@@ -82,7 +82,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
                 LinearGradient(colors: [Color(red: 0.25, green: 0.35, blue: 0.55), Color(red: 0.75, green: 0.6, blue: 0.4)], startPoint: .top, endPoint: .bottom)
                 NotchRootView().environmentServices(services)
             }
-            .frame(width: NotchLayout.windowSize.width, height: NotchLayout.windowSize.height)
+            .frame(width: state.layout.windowSize(for: state.tool, screenHeight: 1200).width,
+                   height: state.layout.windowSize(for: state.tool, screenHeight: 1200).height)
             let renderer = ImageRenderer(content: view)
             renderer.scale = 2
             if let image = renderer.nsImage, let tiff = image.tiffRepresentation,

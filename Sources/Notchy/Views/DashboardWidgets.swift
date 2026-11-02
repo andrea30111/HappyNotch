@@ -4,7 +4,7 @@ import SwiftUI
 extension Tool {
     /// Tools that can be shown as a card on the Workspace dashboard.
     static var dashboardCandidates: [Tool] { allCases.filter(\.canBeOnDashboard) }
-    var canBeOnDashboard: Bool { self != .workspace && self != .settings }
+    var canBeOnDashboard: Bool { self != .workspace && self != .settings && self != .neurons }
 }
 
 extension Store {
@@ -349,7 +349,7 @@ struct DashboardCard: View {
         case .clips: ClipsWidget()
         case .clipboard: ClipboardWidget()
         case .insights: InsightsWidget()
-        case .workspace, .settings: EmptyView()
+        case .workspace, .settings, .neurons: EmptyView()
         }
     }
 }

@@ -226,7 +226,7 @@ private struct SyncSettings: View {
             } header: {
                 Text("Notes")
             } footer: {
-                Text("Off by default. Each day's page becomes a note \"Notchy · date\" in a \"Notchy\" folder in Notes, and edits flow both ways. If both sides change at once, the notepad wins. HappyNotch never touches your other notes. macOS will ask once to let HappyNotch control Notes.")
+                Text("Pages lists every note in Apple Notes. Sync is off by default: each day's page then becomes a note \"Notchy · date\" in a \"Notchy\" folder, and edits flow both ways. If both sides change at once, the notepad wins. HappyNotch only creates or edits those daily notes. macOS will ask once to let HappyNotch control Notes.")
             }
         }
     }

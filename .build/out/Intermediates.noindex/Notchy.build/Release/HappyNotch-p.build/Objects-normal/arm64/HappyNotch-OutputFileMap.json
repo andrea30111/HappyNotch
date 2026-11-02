@@ -208,6 +208,11 @@
     "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/InsightsView.bc",
     "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/InsightsView.o"
   },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/NeuronsView.swift" : {
+    "index-unit-output-path" : "/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/NeuronsView.o",
+    "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/NeuronsView.bc",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/NeuronsView.o"
+  },
   "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Sources/Notchy/Views/NotchRootView.swift" : {
     "index-unit-output-path" : "/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/NotchRootView.o",
     "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Release/HappyNotch-p.build/Objects-normal/arm64/NotchRootView.bc",

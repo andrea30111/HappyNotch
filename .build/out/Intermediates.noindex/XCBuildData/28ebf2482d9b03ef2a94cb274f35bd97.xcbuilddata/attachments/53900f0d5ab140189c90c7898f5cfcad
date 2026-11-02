@@ -1,0 +1,49 @@
+{
+  "" : {
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/NotchyTests-primary.dia",
+    "emit-module-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/NotchyTests-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/NotchyTests-primary-emit-module.dia",
+    "pch" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/NotchyTests-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/NotchyTests-primary.swiftdeps"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/DerivedSources/test_entry_point.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/test_entry_point.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/test_entry_point.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/test_entry_point.dia",
+    "index-unit-output-path" : "/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/test_entry_point.o",
+    "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/test_entry_point.bc",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/test_entry_point.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/test_entry_point.swiftdeps",
+    "swiftmodule" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/test_entry_point~partial.swiftmodule"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Tests/NotchyTests/AppleNotesTests.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/AppleNotesTests.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/AppleNotesTests.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/AppleNotesTests.dia",
+    "index-unit-output-path" : "/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/AppleNotesTests.o",
+    "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/AppleNotesTests.bc",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/AppleNotesTests.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/AppleNotesTests.swiftdeps",
+    "swiftmodule" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/AppleNotesTests~partial.swiftmodule"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Tests/NotchyTests/DashboardLayoutTests.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/DashboardLayoutTests.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/DashboardLayoutTests.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/DashboardLayoutTests.dia",
+    "index-unit-output-path" : "/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/DashboardLayoutTests.o",
+    "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/DashboardLayoutTests.bc",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/DashboardLayoutTests.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/DashboardLayoutTests.swiftdeps",
+    "swiftmodule" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/DashboardLayoutTests~partial.swiftmodule"
+  },
+  "/Users/andreamarchetti/Documents/Progetti/HappyNotch/Tests/NotchyTests/NaturalLanguageParserTests.swift" : {
+    "const-values" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/NaturalLanguageParserTests.swiftconstvalues",
+    "dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/NaturalLanguageParserTests.d",
+    "diagnostics" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/NaturalLanguageParserTests.dia",
+    "index-unit-output-path" : "/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/NaturalLanguageParserTests.o",
+    "llvm-bc" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/NaturalLanguageParserTests.bc",
+    "object" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/NaturalLanguageParserTests.o",
+    "swift-dependencies" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/NaturalLanguageParserTests.swiftdeps",
+    "swiftmodule" : "/Users/andreamarchetti/Documents/Progetti/HappyNotch/.build/out/Intermediates.noindex/Notchy.build/Debug/NotchyTests-p.build/Objects-normal/arm64/NaturalLanguageParserTests~partial.swiftmodule"
+  }
+}

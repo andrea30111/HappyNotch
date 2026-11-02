@@ -23,7 +23,7 @@ struct NotchRootView: View {
         let flare = layout.hasNotch ? layout.notchTopRadius * 2 : 0
         switch mode {
         case .open:
-            return layout.openPanelSize
+            return layout.openPanelSize(for: state.tool)
         case .nudge:
             return CGSize(width: max(notch.width + 220, 400), height: (layout.hasNotch ? notch.height : 0) + 56)
         case .timer:
@@ -85,6 +85,7 @@ struct NotchRootView: View {
             }
         }
         .frame(width: islandSize.width, height: islandSize.height, alignment: .top)
+        .animation(DS.spring, value: state.tool)
         .background(islandShape.fill(Color.black))
         .clipShape(islandShape)
         .shadow(color: .black.opacity(mode == .open || mode == .nudge ? 0.45 : 0), radius: 20, y: 10)

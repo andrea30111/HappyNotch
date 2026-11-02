@@ -28,9 +28,25 @@ struct NotchLayout: Equatable {
     static let fallback = NotchLayout(hasNotch: false, notchSize: CGSize(width: 200, height: 24), menuBarHeight: 24)
 
     var headerHeight: CGFloat { hasNotch ? max(notchSize.height, 32) : 36 }
-    var openPanelSize: CGSize { CGSize(width: Self.panelWidth, height: headerHeight + 8 + Self.contentHeight + 14) }
+    var openPanelSize: CGSize { openPanelSize(for: .workspace) }
     var panelTopOffset: CGFloat { hasNotch ? 0 : menuBarHeight + 6 }
     var notchTopRadius: CGFloat { 8 }
+
+    /// Neurons is a chat page, so its content area is twice the usual height.
+    static func contentHeight(for tool: Tool) -> CGFloat {
+        tool == .neurons ? contentHeight * 2 : contentHeight
+    }
+
+    func openPanelSize(for tool: Tool) -> CGSize {
+        CGSize(width: Self.panelWidth, height: headerHeight + 8 + Self.contentHeight(for: tool) + 14)
+    }
+
+    /// Tall enough for the open island and the dock. Stays at the base height until Neurons needs more.
+    func windowSize(for tool: Tool, screenHeight: CGFloat) -> CGSize {
+        let needed = panelTopOffset + openPanelSize(for: tool).height + 12 + Self.dockHeight + 36
+        let height = min(max(Self.windowSize.height, needed), screenHeight)
+        return CGSize(width: Self.windowSize.width, height: height)
+    }
 }
 
 @MainActor

@@ -1,0 +1,10 @@
+Target dependency graph (4 targets)
+Target 'AllIncludingTests' in project 'Aggregate'
+➜ Explicit dependency on target 'NotchyTests-product' in project 'Notchy'
+➜ Dependency on target 'NotchyTests-product' in project 'Notchy' via transitive dependency through 'NotchyTests-test-runner'
+➜ Explicit dependency on target 'HappyNotch-product' in project 'Notchy'
+Target 'NotchyTests-product' in project 'Notchy'
+➜ Explicit dependency on target 'HappyNotch-product' in project 'Notchy'
+➜ Explicit dependency on target 'Notchy' in project 'Notchy'
+Target 'Notchy' in project 'Notchy' (no dependencies)
+Target 'HappyNotch-product' in project 'Notchy' (no dependencies)

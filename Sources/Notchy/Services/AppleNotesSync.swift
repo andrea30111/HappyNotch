@@ -2,18 +2,29 @@ import AppKit
 import Combine
 import Foundation
 
-/// Opt-in two-way sync between the daily notepad and a "Notchy" folder in Apple Notes.
+/// Opt-in two-way sync between the daily notepad and a "Notchy" folder in Apple Notes,
+/// plus a read-only list of every note in Apple Notes for the Pages column.
 /// Notes has no public framework, so this goes through AppleScript (Automation permission).
-/// Each day becomes one note titled "Notchy · yyyy-MM-dd"; other notes are never touched.
+/// Each day becomes one note titled "Notchy · yyyy-MM-dd". HappyNotch only creates or edits those.
 @MainActor
 final class AppleNotesSync: ObservableObject {
     @Published private(set) var isSyncing = false
     @Published private(set) var lastSync: Date?
     @Published private(set) var needsPermission = false
     @Published var lastError: String?
+    /// Every note in Apple Notes, newest first. Read-only; daily sync still only edits the Notchy folder.
+    @Published private(set) var library: [NotesScript.LibraryNote] = []
+    @Published private(set) var libraryLoading = false
+    @Published var libraryError: String?
+    /// Set while Pages is showing a note that is not one of this app's daily pages.
+    @Published var selectedLibraryNoteID: String?
+    @Published private(set) var selectedLibraryTitle: String?
+    @Published private(set) var selectedLibraryText: String?
 
     private let store: Store
     private var pending: DispatchWorkItem?
+    private var bodyCache: [String: String] = [:]
+    private var libraryGeneration = 0
     private var pendingLaunchesNotes = false
     private var resync: Bool?
     private var cancellables = Set<AnyCancellable>()
@@ -30,7 +41,10 @@ final class AppleNotesSync: ObservableObject {
         NSWorkspace.shared.notificationCenter.publisher(for: NSWorkspace.didActivateApplicationNotification)
             .compactMap { ($0.userInfo?[NSWorkspace.applicationUserInfoKey] as? NSRunningApplication)?.bundleIdentifier }
             .filter { $0 == NotesScript.bundleIdentifier }
-            .sink { [weak self] _ in self?.scheduleSync(after: 0.5, launchingNotes: false) }
+            .sink { [weak self] _ in
+                self?.scheduleSync(after: 0.5, launchingNotes: false)
+                self?.refreshLibrary(launching: false)
+            }
             .store(in: &cancellables)
         if isEnabled { scheduleSync(after: 3, launchingNotes: true) }
     }
@@ -75,6 +89,33 @@ final class AppleNotesSync: ObservableObject {
     }
 
     func isLinked(_ day: Date) -> Bool { store.appleNoteLinks[DayKey.key(for: day)] != nil }
+
+    func refreshLibrary(launching: Bool) {
+        Task { await loadLibrary(launching: launching) }
+    }
+
+    func clearLibrarySelection() {
+        selectedLibraryNoteID = nil
+        selectedLibraryTitle = nil
+        selectedLibraryText = nil
+    }
+
+    /// Shows a note from Apple Notes in the notepad without writing it back.
+    func showLibraryNote(id: String, title: String) {
+        selectedLibraryNoteID = id
+        selectedLibraryTitle = title
+        selectedLibraryText = bodyCache[id]
+        guard bodyCache[id] == nil else { return }
+        Task { await loadLibraryNote(id: id) }
+    }
+
+    func openLibraryNoteInNotes() {
+        guard let id = selectedLibraryNoteID else { return }
+        Task {
+            do { try await NotesScript.show(id: id) }
+            catch { report(error) }
+        }
+    }
 
     func openInNotes(_ day: Date) {
         guard let id = store.appleNoteLinks[DayKey.key(for: day)]?.noteID else {
@@ -195,6 +236,52 @@ final class AppleNotesSync: ObservableObject {
         }
     }
 
+    private func loadLibrary(launching: Bool) async {
+        libraryGeneration += 1
+        let generation = libraryGeneration
+        if !NotesScript.isRunning {
+            guard launching else { return }
+            guard await NotesScript.launchHidden() else {
+                libraryError = "Couldn't start Notes."
+                return
+            }
+        }
+        guard generation == libraryGeneration else { return }
+        libraryLoading = true
+        defer { if generation == libraryGeneration { libraryLoading = false } }
+        do {
+            let notes = try await NotesScript.fetchLibrary()
+            guard generation == libraryGeneration else { return }
+            library = notes.sorted { $0.modified > $1.modified }
+            libraryError = nil
+            needsPermission = false
+        } catch {
+            guard generation == libraryGeneration else { return }
+            if let scriptError = error as? NotesScript.ScriptError, scriptError.isPermissionDenied {
+                needsPermission = true
+                libraryError = "Allow HappyNotch to control Notes in System Settings › Privacy & Security › Automation."
+            } else {
+                libraryError = error.localizedDescription
+            }
+        }
+    }
+
+    private func loadLibraryNote(id: String) async {
+        do {
+            let plaintext = try await NotesScript.plaintext(id: id)
+            guard selectedLibraryNoteID == id else { return }
+            let body = NotesScript.body(fromPlaintext: plaintext)
+            bodyCache[id] = body
+            selectedLibraryText = body
+        } catch {
+            guard selectedLibraryNoteID == id else { return }
+            if let scriptError = error as? NotesScript.ScriptError, scriptError.isPermissionDenied {
+                needsPermission = true
+            }
+            libraryError = error.localizedDescription
+        }
+    }
+
     /// Writes a day's note unless the user edited it while AppleScript was running.
     @discardableResult
     private func setLocal(_ text: String?, day: String, expected: String) -> Bool {
@@ -242,6 +329,13 @@ enum NotesScript {
         /// Normalized body without the title line.
         let text: String
         var day: String? { NotesScript.day(fromTitle: name) }
+    }
+
+    /// A note anywhere in Apple Notes. Pages lists these; only daily Notchy notes are edited.
+    struct LibraryNote: Identifiable, Equatable, Sendable {
+        var id: String
+        var title: String
+        var modified: Date
     }
 
     struct ScriptError: LocalizedError {
@@ -297,6 +391,16 @@ enum NotesScript {
     }
 
     /// Parses the `fetch` script output: records separated by RS, fields (id, name, plaintext) by US.
+    static func parseLibraryOutput(_ output: String) -> [LibraryNote] {
+        output.components(separatedBy: recordSeparator).compactMap { record in
+            let fields = record.components(separatedBy: unitSeparator)
+            guard fields.count >= 3, !fields[0].isEmpty else { return nil }
+            let stamp = fields[fields.count - 1]
+            let title = fields[1..<(fields.count - 1)].joined(separator: unitSeparator)
+            return LibraryNote(id: fields[0], title: title, modified: stampDate(from: stamp) ?? .distantPast)
+        }
+    }
+
     static func parseFetchOutput(_ output: String) -> [RemoteNote] {
         output.components(separatedBy: recordSeparator).compactMap { record in
             let fields = record.components(separatedBy: unitSeparator)
@@ -339,6 +443,59 @@ enum NotesScript {
         if not (exists folder folderName of acc) then make new folder at acc with properties {name:folderName}
         set f to folder folderName of acc
     """
+
+    private static let stampFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .gregorian)
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.timeZone = .current
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        return formatter
+    }()
+
+    static func stampDate(from stamp: String) -> Date? { stampFormatter.date(from: stamp) }
+
+    /// Every note in Apple Notes (id, title, modification time). Does not create or edit anything.
+    static func fetchLibrary() async throws -> [LibraryNote] {
+        let output = try await run("""
+        on run
+            set RS to character id 30
+            set US to character id 31
+            set out to {}
+            tell application "Notes"
+                repeat with n in every note
+                    set end of out to (id of n) & US & (name of n) & US & my iso(modification date of n)
+                end repeat
+            end tell
+            set AppleScript's text item delimiters to RS
+            set joined to out as text
+            set AppleScript's text item delimiters to ""
+            return joined
+        end run
+        on pad(n)
+            if n < 10 then return "0" & n
+            return n as text
+        end pad
+        on iso(d)
+            set y to year of d
+            set m to my pad(month of d as integer)
+            set da to my pad(day of d)
+            set h to my pad(hours of d)
+            set mi to my pad(minutes of d)
+            set s to my pad(seconds of d)
+            return (y as text) & "-" & m & "-" & da & "T" & h & ":" & mi & ":" & s
+        end iso
+        """)
+        return parseLibraryOutput(output)
+    }
+
+    static func plaintext(id: String) async throws -> String {
+        try await run("""
+        on run argv
+            tell application "Notes" to return plaintext of note id (item 1 of argv)
+        end run
+        """, arguments: [id])
+    }
 
     static func fetch() async throws -> [RemoteNote] {
         let output = try await run("""
